@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://warrior.onrender.com/sitemap.xml
