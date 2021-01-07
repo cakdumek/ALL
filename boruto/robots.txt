@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://borutowall.onrender.com/sitemap.xml
