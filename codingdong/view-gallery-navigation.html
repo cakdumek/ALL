@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Gallery Navigation - CodingDong</title>
+<link rel='canonical' href='https://codingdong.onrender.com/view-gallery-navigation.html' />
+<meta content="Gallery Navigation The Gallery Navigation component is not meant to be a standalone component. Instead, it lets you add a separately positionable navigation pane to a Swipeable Gallery, Carousel Gallery, or 360° Gallery." name="description" />
+<meta content="cakdumek, cakdum, Gallery, Navigation, The, Gallery, Navigation, component, is, not, meant, to, be, a, standalone, component., Instead,, it, lets, you, add, a, separately, positionable, navigation, pane, to, a, Swipeable, Gallery,, Carousel, Gallery,, or, 360°, Gallery." name="keywords" />
+<meta content='index, follow' name='robots' />
+<meta Content='snippet' name='googlebot' />
+<meta content='en' name='language' />
+<meta content='ID, US, CA, UK, FR, ES, JP, CN , DE' name='geo.country' />
+<meta content='Indonesia, United States, Canada, United Kingdom, France, Espana, Japan, China, Germany' name='geo.placename' />
+<meta content='2 days' name='revisit-after' />
+<meta content='never' name='expires' />
+<meta content='always' name='revisit' />
+<meta content='global' name='distribution' />
+<meta content='general' name='rating' />
+<meta content='index' name='googlebot' />
+<meta content='snippet' name='googlebot-news' />
+<meta content='index' name='googlebot-news' />
+<meta content='index' name='Googlebot-Image' />
+<meta content='index' name='Googlebot-Video' />
+<meta content='index' name='Googlebot-Mobile' />
+<meta content='index' name='Mediapartners-Google' />
+<meta content='index' name='AdsBot-Google' />
+<meta content='follow, all' name='Scooter' />
+<meta content='follow, all' name='msnbot' />
+<meta content='follow, all' name='alexabot' />
+<meta content='follow, all' name='Slurp' />
+<meta content='follow, all' name='ZyBorg' />
+<meta content='follow, all' name='Scooter' />
+<meta content='follow, all' name='seznambot' />
+<meta content='follow, all' name='ia_archiver' />
+<meta content='follow, all' name='Baiduspider' />
+<meta content='follow, all' name='BecomeBot' />
+<meta content='follow, all' name='Bingbot' />
+<meta content='follow, all' name='btbot' />
+<meta content='follow, all' name='Dotbot' />
+<meta content='follow, all' name='Yeti' />
+<meta content='follow, all' name='Teoma' />
+<meta content='follow, all' name='Yandex' />
+<meta content='follow, all' name='FAST-WebCrawler' />
+<meta content='follow, all' name='FindLinks' />
+<meta content='follow, all' name='FyberSpider' />
+<meta content='follow, all' name='008' />
+<meta content='ALL' name='SPIDERS' />
+<meta content='ALL' name='WEBCRAWLERS' />
+<meta content='1, 2, 3, 10, 11, 12, 13, ATF' name='serps' />
+<meta content='Aeiwi, Alexa, AllTheWeb, AltaVista, AOL Netfind, Anzwers, Canada, DirectHit, EuroSeek, Excite, Overture, Go, Google, HotBot, InfoMak, Kanoodle, Lycos, MasterSite, National Directory, Northern Light, SearchIt, SimpleSearch, WebsMostLinked, WebTop, What-U-Seek, AOL, Yahoo, WebCrawler, Infoseek, Excite, Magellan, LookSmart, CNET, Googlebot' name='search engines' />
+<link rel="shorcut icon" href="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/favicon.ico" />
+<meta content='' property='fb:app_id' />
+<meta content='https://www.facebook.com/cakdumek' property='fb:admins' />
+<meta content='@Wikipedia' name='twitter:site' />
+<meta content='@Wikipedia' name='twitter:creator' />
+<meta content='' name='msvalidate.01' />
+<meta content='' name='alexaVerifyID' />
+<meta content='Cakdumek, rucksdebora5@gmail.com' name='Author' />
+<meta content='all' name='robots' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{width:auto;max-width:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 5px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
+</head>
+<body>
+<header class="bg-white fixed-top">
+<nav class="navbar navbar-light bg-white mb-0">
+<div class="container justify-content-center justify-content-sm-between">
+  <a href="/" title="CodingDong" class="navbar-brand mb-1">CodingDong</a>
+  <form class="form-inline mb-1" action="/" method="get">
+<input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search">
+  </form>
+</div>  
+</nav>
+</header>
+
+
+<main id="main" class="main">
+<div class="container">  
+<div class="row content">
+<div class="col-md-9">
+<div class="col-sm-12 p-2">
+
+<h1>Gallery Navigation</h1>
+<p>
+
+<strong>Navigation Gallery | Thomas the Tank Engine Wikia | Fandom</strong> This is a gallery subpage for Navigation. This subpage contains all images relating to said article. If there is an image that belongs on this article, please insert it on this page.. <strong>Gallery control: reference   Power Apps | Microsoft Docs</strong> NavigationStep – How far a gallery scrolls if its ShowNavigation property is set to true and the user selects a navigation arrow at either end of that gallery. Selectable – Whether gallery items can be selected. When set to true, screen readers identify the gallery as a selectable list. And you select an item by selecting it.. <strong>Gallery Navigation Not Working   Power Platform  munity</strong> Gallery Navigation Not Working ‎01 03 2018 02:33 AM. Hi, So I have encountered an issue in which I have a gallery and when I attempt to click the arrow in the gallery to navigate to the item within the SharePoint list, it does not do anything despite the 'On Select' field being set to 'Select.Parent'. Can anyone advise?. </p>
+<div style="text-align: center;"><script>
+atOptions = {
+'key' : 'd21fb9b02817c0ac553e0041caac120a',
+'format' : 'iframe',
+'height' : 250,
+'width' : 300,
+'params' : {}
+};
+document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://inheritedgeneralrailroad.com/d21fb9b02817c0ac553e0041caac120a/invoke.js"></scr' + 'ipt>');
+</script></div>
+<div><ul class="list-group">
+<div class="col-sm-12 p-2">
+<li class="list-group-item"><a class="badge-secondary" href="view-split-sticky-sections.html">Split Sticky Sections</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-remove-logo-from-header-injecting-code-didnt-work.html">Remove Logo From Header Injecting Code Didnt Work</a></li>
+<li class="list-group-item"><a class="badge-dark" href="view-change-background-image-size-on-mobile.html">Change Background Image Size On Mobile</a></li>
+<li class="list-group-item"><a class="badge-warning" href="view-product-carousel-&-slideshow-ui-and-navigation-arrows-missing-on-mobile-in-7.1.html">Product Carousel & Slideshow Ui And Navigation Arrows Missing On Mobile In 7.1</a></li>
+</div>
+</ul></div>
+
+
+<!--ads/auto.txt-->
+</div> 
+<div class="col-sm-12">
+
+<div class="row">
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://d85bc6ea86296c327d7f-fc14fae93feb1cf1ff31873061ee8f7d.ssl.cf1.rackcdn.com/245/1455/ALPINE%20NAV%20IN%20SANTE%20FE.jpg" data-lightbox="roadtrip" data-title="Navigation Systems Gallery in Connecticut | Attention To Detail">
+<img class="card-img v-image" src="https://tse1.mm.bing.net/th?id=OIP.gCDnDDCN7yAmT6LX0ZoGeQHaE7&pid=Api&P=0&w=300&h=300" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Navigation Systems Gallery in Connecticut | Attention To Detail">
+
+</a>
+<div class="card-body text-center">  	
+<div class="d-block mb-2">
+<a href="https://d85bc6ea86296c327d7f-fc14fae93feb1cf1ff31873061ee8f7d.ssl.cf1.rackcdn.com/245/1455/ALPINE%20NAV%20IN%20SANTE%20FE.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Navigation Systems Gallery in Connecticut | Attention To Detail</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://d85bc6ea86296c327d7f-fc14fae93feb1cf1ff31873061ee8f7d.ssl.cf1.rackcdn.com/245/3565/Factory_GM_Nav_Install.jpg" data-lightbox="roadtrip" data-title="Navigation Systems Gallery in Connecticut | Attention To Detail">
+<img class="card-img v-image" src="https://tse1.mm.bing.net/th?id=OIP.p3pOMgR3lsYXkEI2lgbrggHaE7&pid=Api&P=0&w=300&h=300" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Navigation Systems Gallery in Connecticut | Attention To Detail">
+
+</a>
+<div class="card-body text-center">  	
+<div class="d-block mb-2">
+<a href="https://d85bc6ea86296c327d7f-fc14fae93feb1cf1ff31873061ee8f7d.ssl.cf1.rackcdn.com/245/3565/Factory_GM_Nav_Install.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Navigation Systems Gallery in Connecticut | Attention To Detail</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://d85bc6ea86296c327d7f-fc14fae93feb1cf1ff31873061ee8f7d.ssl.cf1.rackcdn.com/245/3566/Dodge%20Ram%20Kenwood.jpg" data-lightbox="roadtrip" data-title="Navigation Systems Gallery in Connecticut | Attention To Detail">
+<img class="card-img v-image" src="https://d85bc6ea86296c327d7f-fc14fae93feb1cf1ff31873061ee8f7d.ssl.cf1.rackcdn.com/245/3566/Dodge%20Ram%20Kenwood.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Navigation Systems Gallery in Connecticut | Attention To Detail">
+
+</a>
+<div class="card-body text-center">  	
+<div class="d-block mb-2">
+<a href="https://d85bc6ea86296c327d7f-fc14fae93feb1cf1ff31873061ee8f7d.ssl.cf1.rackcdn.com/245/3566/Dodge%20Ram%20Kenwood.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Navigation Systems Gallery in Connecticut | Attention To Detail</h3>
+</div>
+</div>
+</div>
+ 
+<div class="d-block p-3"> 
+<p>
+The Gallery Navigation component is not meant to be a standalone component. Instead, it lets you add a separately positionable navigation pane to a Swipeable Gallery, Carousel Gallery, or 360° Gallery.. The site you have linked is a WordPress site, not Squarespace. However, they are using the Isotope library to achieve this filtering and this is a library that can be used on any site, including Squarespace if you have the right skills.. For the same feature, packaged for Squarespace, see the Universal Filter.There are similar threads from 2018 and 2019 where I've also linked to these.. Icon Bar Menu Icon Accordion Tabs Vertical Tabs Tab Headers Full Page Tabs Hover Tabs Top Navigation Responsive Topnav Navbar with Icons Search Menu Search Bar Fixed Sidebar Side Navigation Responsive Sidebar Fullscreen Navigation Off Canvas Menu Hover Sidenav Buttons Sidebar with Icons Horizontal ... Create a Tab Gallery Step 1) Add HTML .... Here we will also maintain the Navigation items in the SharePoint list so that we can make the PowerApps navigation menu dynamic. If you are new to Microsoft PowerApps, check out an article on Create your First form using Microsoft PowerApps in SharePoint Online. Create a navigation menu using Gallery Control in PowerApps. It is recommended to use Envira Gallery plugin to create your image gallery. It gives a unique URL to all the WordPress galleries. To add your WordPress gallery to main navigation menu, you’ll need to follow these 4 steps: Step 1. Install and activate Envira Gallery plugin; Step 2. Create an image gallery on your WordPress site; Step 3.. </p>
+</div> 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.exisoftware.com/thumbnail_generator/screenshots/numbered-links-navigation-settings.jpg" data-lightbox="roadtrip" data-title="Web photo gallery page navigation">
+<img class="card-img v-image" src="https://www.exisoftware.com/thumbnail_generator/screenshots/numbered-links-navigation-settings.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Web photo gallery page navigation">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.exisoftware.com/thumbnail_generator/screenshots/numbered-links-navigation-settings.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Web photo gallery page navigation</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://d85bc6ea86296c327d7f-fc14fae93feb1cf1ff31873061ee8f7d.ssl.cf1.rackcdn.com/245/4570/Kenwood%20994%20Angled%20Android.jpg" data-lightbox="roadtrip" data-title="Kenwood Navigation Gallery in Connecticut | Attention To Detail">
+<img class="card-img v-image" src="https://d85bc6ea86296c327d7f-fc14fae93feb1cf1ff31873061ee8f7d.ssl.cf1.rackcdn.com/245/4570/Kenwood%20994%20Angled%20Android.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Kenwood Navigation Gallery in Connecticut | Attention To Detail">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://d85bc6ea86296c327d7f-fc14fae93feb1cf1ff31873061ee8f7d.ssl.cf1.rackcdn.com/245/4570/Kenwood%20994%20Angled%20Android.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Kenwood Navigation Gallery in Connecticut | Attention To Detail</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://enviragallery.com/wp-content/uploads/2015/11/envira-gallery-custom-navigation-arrows.jpg" data-lightbox="roadtrip" data-title="How to Customize the Lightbox Navigation Arrows - Envira Gallery">
+<img class="card-img v-image" src="https://enviragallery.com/wp-content/uploads/2015/11/envira-gallery-custom-navigation-arrows.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How to Customize the Lightbox Navigation Arrows - Envira Gallery">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://enviragallery.com/wp-content/uploads/2015/11/envira-gallery-custom-navigation-arrows.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How to Customize the Lightbox Navigation Arrows - Envira Gallery</h3>
+</div>
+</div>
+</div>
+<div class="d-block p-3"> 
+<p>
+<strong>Gallery Navigation Not Working   Power Platform  munity</strong> Gallery Navigation Not Working ‎01 03 2018 02:33 AM. Hi, So I have encountered an issue in which I have a gallery and when I attempt to click the arrow in the gallery to navigate to the item within the SharePoint list, it does not do anything despite the 'On Select' field being set to 'Select.Parent'. Can anyone advise?. <strong>PowerApps: Create a navigation menu using the Gallery ...</strong> Here we will also maintain the Navigation items in the SharePoint list so that we can make the PowerApps navigation menu dynamic. If you are new to Microsoft PowerApps, check out an article on Create your First form using Microsoft PowerApps in SharePoint Online. Create a navigation menu using Gallery Control in PowerApps. </p>
+</div>
+<div class="col-12 mb-4">
+<div class="card">
+<img class="card-img-top v-cover" src="https://www.jqueryscript.net/images/jQuery-Plugin-For-Automatic-Thumbnail-Navigation-Gallery-PIGNOSE-Gallery.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Basic jQuery Gallery with Paginated Thumbnail Navigation - ImageGallery.js | Free jQuery Plugins">
+<div class="card-body">
+<h3 class="h5"><b>Basic jQuery Gallery with Paginated Thumbnail Navigation - ImageGallery.js | Free jQuery Plugins</b></h3>
+</div> 
+</div>
+</div>
+<div class="d-block p-3"> 
+<p>
+Gallery Navigation Not Working ‎01 03 2018 02:33 AM. Hi, So I have encountered an issue in which I have a gallery and when I attempt to click the arrow in the gallery to navigate to the item within the SharePoint list, it does not do anything despite the 'On Select' field being set to 'Select.Parent'. Can anyone advise?. Hi @kmw1130 . Can you try to set the TemplateFill property of the Gallery control to: If(ThisItem.Value = App.ActiveScreen.Name, Red, RGBA(0,0,0,1)) I have assumed that you have stored Screen Name in value column but it should be updated in case you have a different column name.. Adding Navigation to Photo Galleries Photo galleries are the heart of soul of every photographer’s portfolio. They give potential clients an overview of your work, talent, expertise, but also a chance to peek into your personality. The way you structure your photo galleries may offer many insights into your professional profile: organized .... Here we will also maintain the Navigation items in the SharePoint list so that we can make the PowerApps navigation menu dynamic. If you are new to Microsoft PowerApps, check out an article on Create your First form using Microsoft PowerApps in SharePoint Online. Create a navigation menu using Gallery Control in PowerApps. Windows Photo Gallery navigation pane I have accidentally clicked something and lost the navigation pane on the left hand side of Windows Photo Gallery with all the files in it. What do I do to restore that pane? This thread is locked. You can follow the question or vote as helpful, but you cannot reply to this thread.. Gallery   Approach Navigation Systems offers the full range of airport approach aids, including Non Directional Beacons (NDB), Distance Measuring Equipment (DME), Instrument Landing Systems (ILS), and VHF Omnidirectional Range (VOR). ANS Inc. provides quality products including those Nautel, Selex, and others, which meet the standards of ICAO, FAA and Transport Canada.. Design, production and maintenance of solar powered aids to navigation worldwide. Reliable, durable and cost effective. View our products.. </p>
+
+<div><ul class="list-group">
+<div class="col-sm-12 p-2">
+<strong>READ MORE:</strong>
+<li class="list-group-item"><a class="badge-dark" href="view-i-cant-get-my-google-sheet-to-be-responsive-what-am-i-doing-wrong.html">I Cant Get My Google Sheet To Be Responsive What Am I Doing Wrong</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-changing-logocolor-for-specific-page--change-logocolor-when-tapping-mobile-menu-navigation.html">Changing Logocolor For Specific Page  Change Logocolor When Tapping Mobile Menu Navigation</a></li>
+<li class="list-group-item"><a class="badge-secondary" href="view-2-column-mobile-view.html">2 Column Mobile View</a></li>
+<li class="list-group-item"><a class="badge-warning" href="view-hover-state-on-mobile-menu.html">Hover State On Mobile Menu</a></li>
+</div>
+</ul></div>
+</div> 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.groovypost.com/wp-content/uploads/2010/12/image52.png" data-lightbox="roadtrip" data-title="How To Show/Hide the Navigation Pane in Windows Live Photo Gallery 2011">
+<img class="card-img v-image" src="https://www.groovypost.com/wp-content/uploads/2010/12/image52.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How To Show/Hide the Navigation Pane in Windows Live Photo Gallery 2011">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.groovypost.com/wp-content/uploads/2010/12/image52.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How To Show/Hide the Navigation Pane in Windows Live Photo Gallery 2011</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="http://www.wpcentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2014/02/Navigation_Bar_WP81.jpg?itok=xsa0O7qL" data-lightbox="roadtrip" data-title="New Windows Phone 8.1 gallery shows off navigation bar and more - TechSpot Forums">
+<img class="card-img v-image" src="http://www.wpcentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2014/02/Navigation_Bar_WP81.jpg?itok=xsa0O7qL" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="New Windows Phone 8.1 gallery shows off navigation bar and more - TechSpot Forums">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="http://www.wpcentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2014/02/Navigation_Bar_WP81.jpg?itok=xsa0O7qL" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">New Windows Phone 8.1 gallery shows off navigation bar and more - TechSpot Forums</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="http://jqueryhouse.com/wp-content/uploads/2015/01/jquery-image-gallery.jpeg" data-lightbox="roadtrip" data-title="30 Best jQuery Image Gallery Plugins | jQueryHouse">
+<img class="card-img v-image" src="http://jqueryhouse.com/wp-content/uploads/2015/01/jquery-image-gallery.jpeg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="30 Best jQuery Image Gallery Plugins | jQueryHouse">
+
+</a>
+<div class="card-body text-center"> 
+<div class="d-block mb-2">
+<a href="http://jqueryhouse.com/wp-content/uploads/2015/01/jquery-image-gallery.jpeg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div> 
+<h3 class="h6">30 Best jQuery Image Gallery Plugins | jQueryHouse</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/421d5cf9-4873-4644-9354-43977fe8483c/dbvch87-bb938f1d-fe66-4edf-ada1-62fb4f00e34b.jpg/v1/fill/w_1280,h_1280,q_70,strp/_gallery_navigation__by_schinkn_dbvch87-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzQyMWQ1Y2Y5LTQ4NzMtNDY0NC05MzU0LTQzOTc3ZmU4NDgzY1wvZGJ2Y2g4Ny1iYjkzOGYxZC1mZTY2LTRlZGYtYWRhMS02MmZiNGYwMGUzNGIuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.G3hw99jqIZnQu3VzIIvFqGux5SpgHByLZzqFCQyvkH8" data-lightbox="roadtrip" data-title="|Gallery Navigation| by Schinkn on DeviantArt">
+<img class="card-img v-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/421d5cf9-4873-4644-9354-43977fe8483c/dbvch87-bb938f1d-fe66-4edf-ada1-62fb4f00e34b.jpg/v1/fill/w_1280,h_1280,q_70,strp/_gallery_navigation__by_schinkn_dbvch87-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzQyMWQ1Y2Y5LTQ4NzMtNDY0NC05MzU0LTQzOTc3ZmU4NDgzY1wvZGJ2Y2g4Ny1iYjkzOGYxZC1mZTY2LTRlZGYtYWRhMS02MmZiNGYwMGUzNGIuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.G3hw99jqIZnQu3VzIIvFqGux5SpgHByLZzqFCQyvkH8" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="|Gallery Navigation| by Schinkn on DeviantArt">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/421d5cf9-4873-4644-9354-43977fe8483c/dbvch87-bb938f1d-fe66-4edf-ada1-62fb4f00e34b.jpg/v1/fill/w_1280,h_1280,q_70,strp/_gallery_navigation__by_schinkn_dbvch87-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzQyMWQ1Y2Y5LTQ4NzMtNDY0NC05MzU0LTQzOTc3ZmU4NDgzY1wvZGJ2Y2g4Ny1iYjkzOGYxZC1mZTY2LTRlZGYtYWRhMS02MmZiNGYwMGUzNGIuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.G3hw99jqIZnQu3VzIIvFqGux5SpgHByLZzqFCQyvkH8" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">|Gallery Navigation| by Schinkn on DeviantArt</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-navigate-to-another-screen-1-1024x361.png" data-lightbox="roadtrip" data-title="PowerApps: Create a navigation menu using the Gallery Control - SharePointSky">
+<img class="card-img v-image" src="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-navigate-to-another-screen-1-1024x361.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="PowerApps: Create a navigation menu using the Gallery Control - SharePointSky">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-navigate-to-another-screen-1-1024x361.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">PowerApps: Create a navigation menu using the Gallery Control - SharePointSky</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="http://www.jqueryscript.net/small/images/Creating-A-Photo-Gallery-with-Thumbnail-Navigation-Using-jQuery.jpg" data-lightbox="roadtrip" data-title="Responsive Justified Image Grid/Gallery Plugin - jQuery imagesGrid | Free jQuery Plugins">
+<img class="card-img v-image" src="http://www.jqueryscript.net/small/images/Creating-A-Photo-Gallery-with-Thumbnail-Navigation-Using-jQuery.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Responsive Justified Image Grid/Gallery Plugin - jQuery imagesGrid | Free jQuery Plugins">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="http://www.jqueryscript.net/small/images/Creating-A-Photo-Gallery-with-Thumbnail-Navigation-Using-jQuery.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Responsive Justified Image Grid/Gallery Plugin - jQuery imagesGrid | Free jQuery Plugins</h3>
+</div>
+</div>
+</div>
+<div class="d-block p-3"> 
+<p>
+<strong>The Gallery Navigation component   Google Web Designer Help</strong> The Gallery Navigation component is not meant to be a standalone component. Instead, it lets you add a separately positionable navigation pane to a Swipeable Gallery, Carousel Gallery, or 360° Gallery.. <strong>How to Add Navigation to Photo Galleries on Wix Sites</strong> Adding Navigation to Photo Galleries Photo galleries are the heart of soul of every photographer’s portfolio. They give potential clients an overview of your work, talent, expertise, but also a chance to peek into your personality. The way you structure your photo galleries may offer many insights into your professional profile: organized .... </p>
+</div> 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="http://image.trucktrend.com/f/17405197+re0+cr1+ar0/0812rv-05%2bgps-navigation-systems%2bpanasonic-cn-nvd905u.jpg" data-lightbox="roadtrip" data-title="GPS Navigation Systems - Lost? Photo & Image Gallery">
+<img class="card-img v-image" src="http://image.trucktrend.com/f/17405197+re0+cr1+ar0/0812rv-05%2bgps-navigation-systems%2bpanasonic-cn-nvd905u.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="GPS Navigation Systems - Lost? Photo & Image Gallery">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="http://image.trucktrend.com/f/17405197+re0+cr1+ar0/0812rv-05%2bgps-navigation-systems%2bpanasonic-cn-nvd905u.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">GPS Navigation Systems - Lost? Photo & Image Gallery</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-navigation-menu-1.png" data-lightbox="roadtrip" data-title="PowerApps: Create a navigation menu using the Gallery Control - SharePointSky">
+<img class="card-img v-image" src="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-navigation-menu-1.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="PowerApps: Create a navigation menu using the Gallery Control - SharePointSky">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-navigation-menu-1.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">PowerApps: Create a navigation menu using the Gallery Control - SharePointSky</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.jqueryscript.net/images/Responsive-jQuery-Image-Gallery-with-Thumbnails-Navigation.jpg" data-lightbox="roadtrip" data-title="Resize Images To Fit In A Container - imgLiquid | Free jQuery Plugins">
+<img class="card-img v-image" src="https://www.jqueryscript.net/images/Responsive-jQuery-Image-Gallery-with-Thumbnails-Navigation.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Resize Images To Fit In A Container - imgLiquid | Free jQuery Plugins">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.jqueryscript.net/images/Responsive-jQuery-Image-Gallery-with-Thumbnails-Navigation.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Resize Images To Fit In A Container - imgLiquid | Free jQuery Plugins</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-gallery-navigation-3.png" data-lightbox="roadtrip" data-title="PowerApps: Create a navigation menu using the Gallery Control - SharePointSky">
+<img class="card-img v-image" src="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-gallery-navigation-3.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="PowerApps: Create a navigation menu using the Gallery Control - SharePointSky">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-gallery-navigation-3.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">PowerApps: Create a navigation menu using the Gallery Control - SharePointSky</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-navigate-to-another-screen.png" data-lightbox="roadtrip" data-title="PowerApps: Create a navigation menu using the Gallery Control - SharePointSky">
+<img class="card-img v-image" src="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-navigate-to-another-screen.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="PowerApps: Create a navigation menu using the Gallery Control - SharePointSky">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.sharepointsky.com/wp-content/uploads/2019/03/powerapps-navigate-to-another-screen.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">PowerApps: Create a navigation menu using the Gallery Control - SharePointSky</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.groovypost.com/wp-content/uploads/2010/12/image51.png" data-lightbox="roadtrip" data-title="How To Show/Hide the Navigation Pane in Windows Live Photo Gallery 2011">
+<img class="card-img v-image" src="https://www.groovypost.com/wp-content/uploads/2010/12/image51.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How To Show/Hide the Navigation Pane in Windows Live Photo Gallery 2011">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.groovypost.com/wp-content/uploads/2010/12/image51.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How To Show/Hide the Navigation Pane in Windows Live Photo Gallery 2011</h3>
+</div>
+</div>
+</div>
+</div>
+<p>
+If you think this blog article is useful, please support me by sharing this website article post to your social media accounts such as Facebook, Instagram and others or you can bookmark this website page with the title <strong><a href="/view-gallery-navigation.html">Gallery Navigation</a></strong> use Ctrl + D for a laptop with a windows operating system or Command + D for a computer with a Mac OS operating system. If you are using a cellphone, you can also use the drawer menu from the browser you are using. Whether it's Windows, Mac, iOs or Android operating system, you will still be able to bookmark this blog page.
+</p>
+
+<div style="text-align: center;"><script>
+atOptions = {
+'key' : 'd21fb9b02817c0ac553e0041caac120a',
+'format' : 'iframe',
+'height' : 250,
+'width' : 300,
+'params' : {}
+};
+document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://inheritedgeneralrailroad.com/d21fb9b02817c0ac553e0041caac120a/invoke.js"></scr' + 'ipt>');
+</script></div>
+
+<div class="clearfix"></div> 
+<div class="d-block mt-4 p-3">
+Source: <a href="https://yahoo.com" rel="nofollow noopener">yahoo.com</a>
+</div>
+<div><ul class="list-group">
+<div class="col-sm-12 p-2">
+<strong>RELATED POSTS:</strong>
+<li class="list-group-item"><a class="badge-dark" href="view-positioning-of-mega-menu-css-problems.html">Positioning Of Mega Menu Css Problems</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-best-scheduling-tools.html">Best Scheduling Tools</a></li>
+<li class="list-group-item"><a class="badge-secondary" href="view-add-space-to-vertically-stacked-content-on-mobile.html">Add Space To Vertically Stacked Content On Mobile</a></li>
+<li class="list-group-item"><a class="badge-light" href="view-custom-form-validation-intercepting-the-form-submission.html">Custom Form Validation Intercepting The Form Submission</a></li>
+<li class="list-group-item"><a class="badge-warning" href="view-positioning-of-the-shopify-buy-button-on-product-page-7.0.html">Positioning Of The Shopify Buy Button On Product Page 7.0</a></li>
+<li class="list-group-item"><a class="badge-dark" href="view-changing-logo-color-on-different-site-pages.html">Changing Logo Color On Different Site Pages</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-different-footer-for-mobile.html">Different Footer For Mobile</a></li>
+</div>
+</ul></div>
+</div>
+</div> 
+<div class="col-md-3">
+<div class="col-sm-12 widget">
+<h3 class="widget-title">Recent Posts</h3>
+<ul class="list-group">
+<li class="list-group-item"><a href="https://moviz.my.id/" target="_blank">Stream Free Movies & TV Shows</a></li>
+<li class="list-group-item"><a href="view-complete-avis-2021-comment-ça-marche.html">Complete Avis 2021 Comment ça Marche</a></li>
+<li class="list-group-item"><a href="view-questce-que-lélargissement-du-pénis-de-collosel.html">Questce Que Lélargissement Du Pénis De Collosel</a></li>
+<li class="list-group-item"><a href="view-adding-iframes-to-my-site-because-the-javascript-code-is-messing-with-site-formatting.html">Adding Iframes To My Site Because The Javascript Code Is Messing With Site Formatting</a></li>
+<li class="list-group-item"><a href="view-create-3-column-image-grid-with-hover-before-and-after-effect.html">Create 3 Column Image Grid With Hover Before And After Effect</a></li>
+<li class="list-group-item"><a href="view-split-sticky-sections.html">Split Sticky Sections</a></li>
+<li class="list-group-item"><a href="view-moving/changing-close-button-in-lightbox-view-on-gallery-page.html">Moving/changing Close Button In Lightbox View On Gallery Page</a></li>
+<li class="list-group-item"><a href="view-i-cant-get-my-google-sheet-to-be-responsive-what-am-i-doing-wrong.html">I Cant Get My Google Sheet To Be Responsive What Am I Doing Wrong</a></li>
+<li class="list-group-item"><a href="view-disable-customer-order-shipping-emails.html">Disable Customer Order Shipping Emails</a></li>
+<li class="list-group-item"><a href="view-positioning-of-mega-menu-css-problems.html">Positioning Of Mega Menu Css Problems</a></li>
+<li class="list-group-item"><a href="view-remove-logo-from-header-injecting-code-didnt-work.html">Remove Logo From Header Injecting Code Didnt Work</a></li>
+<li class="list-group-item"><a href="view-anchor-link-coding-help.html">Anchor Link Coding Help</a></li>
+<li class="list-group-item"><a href="view-changing-logocolor-for-specific-page--change-logocolor-when-tapping-mobile-menu-navigation.html">Changing Logocolor For Specific Page  Change Logocolor When Tapping Mobile Menu Navigation</a></li>
+<li class="list-group-item"><a href="view-accordion-issues-read-more-button-issues.html">Accordion Issues Read More Button Issues</a></li>
+<li class="list-group-item"><a href="view-best-scheduling-tools.html">Best Scheduling Tools</a></li>
+<li class="list-group-item"><a href="view-change-background-image-size-on-mobile.html">Change Background Image Size On Mobile</a></li>
+<li class="list-group-item"><a href="view-do-not-have-header-appear-on-scroll-for-desktop-view-only-7.1.html">Do Not Have Header Appear On Scroll For Desktop View Only 7.1</a></li>
+<li class="list-group-item"><a href="view-2-column-mobile-view.html">2 Column Mobile View</a></li>
+<li class="list-group-item"><a href="view-how-can-i-prevent-my-graph-from-becoming-too-small-on-mobile.html">How Can I Prevent My Graph From Becoming Too Small On Mobile</a></li>
+<li class="list-group-item"><a href="view-add-space-to-vertically-stacked-content-on-mobile.html">Add Space To Vertically Stacked Content On Mobile</a></li>
+<li class="list-group-item"><a href="view-product-carousel-&-slideshow-ui-and-navigation-arrows-missing-on-mobile-in-7.1.html">Product Carousel & Slideshow Ui And Navigation Arrows Missing On Mobile In 7.1</a></li>
+<li class="list-group-item"><a href="view-change-related-product-alignement.html">Change Related Product Alignement</a></li>
+<li class="list-group-item"><a href="view-hover-state-on-mobile-menu.html">Hover State On Mobile Menu</a></li>
+<li class="list-group-item"><a href="view-codeblock-doesnt-show-on-mobile.html">Codeblock Doesnt Show On Mobile</a></li>
+<li class="list-group-item"><a href="view-custom-form-validation-intercepting-the-form-submission.html">Custom Form Validation Intercepting The Form Submission</a></li>
+<li class="list-group-item"><a href="view-redirecting-to-productspecific-pages-after-order-confirmation-page.html">Redirecting To Productspecific Pages After Order Confirmation Page</a></li>
+<li class="list-group-item"><a href="view-embed-document-repository.html">Embed Document Repository</a></li>
+<li class="list-group-item"><a href="view-changing-the-background-colour-of-one-page-on-my-website.html">Changing The Background Colour Of One Page On My Website</a></li>
+<li class="list-group-item"><a href="view-move-from-heroku-to-squarespace.html">Move From Heroku To Squarespace</a></li>
+<li class="list-group-item"><a href="view-positioning-of-the-shopify-buy-button-on-product-page-7.0.html">Positioning Of The Shopify Buy Button On Product Page 7.0</a></li>
+<li class="list-group-item"><a href="view-custom-cart-icon-brine-7.0.html">Custom Cart Icon Brine 7.0</a></li>
+<li class="list-group-item"><a href="view-adding-scroll-arrows-to-brine-product-page-photo-slideshow.html">Adding Scroll Arrows To Brine Product Page Photo Slideshow</a></li>
+<li class="list-group-item"><a href="view-logo-load-javascript-set-as-null-after-first-call-for-rest-of-session.html">Logo Load Javascript Set As Null After First Call For Rest Of Session</a></li>
+<li class="list-group-item"><a href="view-inverting-cursor-across-black/dark-backgrounds.html">Inverting Cursor Across Black/dark Backgrounds</a></li>
+<li class="list-group-item"><a href="view-changing-logo-color-on-different-site-pages.html">Changing Logo Color On Different Site Pages</a></li>
+<li class="list-group-item"><a href="view-make-blog-masonry-grid-unclickable.html">Make Blog Masonry Grid Unclickable</a></li>
+<li class="list-group-item"><a href="view-how-to-add-javascript-to-navigation-button-7.1.html">How To Add Javascript To Navigation Button 7.1</a></li>
+<li class="list-group-item"><a href="view-full-width-image-that-doesnt-impact-other-content-block.html">Full Width Image That Doesnt Impact Other Content Block</a></li>
+<li class="list-group-item"><a href="view-different-footer-for-mobile.html">Different Footer For Mobile</a></li>
+<li class="list-group-item"><a href="view-gradient-start-and-finish-over-text-instead-of-over-entire-block.html">Gradient Start And Finish Over Text Instead Of Over Entire Block</a></li>
+<li class="list-group-item"><a href="view-how-to-remove-all-category-from-shop-in-tresoire-and-edit-button-on-forms-to-full-width.html">How To Remove All Category From Shop In Tresoire And Edit Button On Forms To Full Width</a></li>
+<li class="list-group-item"><a href="view-hide-header-and-footer-on-confirmation-page.html">Hide Header And Footer On Confirmation Page</a></li>
+<li class="list-group-item"><a href="view-carousel-block.html">Carousel Block</a></li>
+<li class="list-group-item"><a href="view-removing-next/previous-post-in-7.0-blog.html">Removing Next/previous Post In 7.0 Blog</a></li>
+<li class="list-group-item"><a href="view-how-do-i-make-a-row-of-text-blocks-maintain-equal-height-and-responsive.html">How Do I Make A Row Of Text Blocks Maintain Equal Height And Responsive</a></li>
+<li class="list-group-item"><a href="view-instagram-blocks-not-showing-captions-descriptions.html">Instagram Blocks Not Showing Captions Descriptions</a></li>
+<li class="list-group-item"><a href="view-removing-a-drop-shadow-from-an-image.html">Removing A Drop Shadow From An Image</a></li>
+<li class="list-group-item"><a href="view-7.1-split-section-in-3.html">7.1 Split Section In 3</a></li>
+<li class="list-group-item"><a href="view-quote-block-css.html">Quote Block Css</a></li>
+<li class="list-group-item"><a href="view-how-do-i-enable-script.html">How Do I Enable Script</a></li>
+<li class="list-group-item"><a href="view-layout-4-columns-as-2-columns-on-mobile.html">Layout 4 Columns As 2 Columns On Mobile</a></li>
+</ul>
+</div>
+<div class="col-sm-12 widget">
+<!--ads/auto.txt-->
+
+<!-- ads -->
+</div>
+</div> 
+</div>
+<div class="row footer">
+<div class="col-md-12 text-center">
+<a href="dmca.html">Dmca</a>
+<a href="contact.html">Contact</a>
+<a href="disclaimer.html">Disclaimer</a>
+<a href="privacy.html">Privacy</a>
+<a href="sitemap.html">Sitemaps</a>
+<div style="text-align: center; font-size: 90%;">Copyright &copy; <script>document.write(new Date().getFullYear());</script> <strong><a href="/">CodingDong</a></strong>. All Rights Reserved.
+ <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+</div>
+</div>
+</div>
+<!--<style>
+#topbar{  background:#ddd;  width:100%;  text-align:center;  color:#333;  padding:5px;  overflow:hidden;  height:89px;  z-index:1000;  font-family:Georgia;  font-size:17px;  line-height:30px;  position:fixed;  bottom:0;  left:0;  border-top:3px solid #26ADE4;  box-shadow:0 1px 5px rgba(0,0,0,.7);
+}
+
+#topbar a{-webkit-box-shadow:rgba(0,0,0,0.278431) 1px 1px 3px; background:#26ADE4;  border-bottom-left-radius:4px;  border-bottom-right-radius:4px;  border-top-left-radius:4px;  border-top-right-radius:4px;  border:none;  box-shadow:rgba(0,0,0,0.278431) 1px 1px 3px;  color:white;  cursor:pointer;  font-size:0.95em;  margin:0px 0px 0px 7px;  outline:none;  padding:5px 13px 5px;  position:relative;  text-decoration:initial;
+font-size:19px;
+}
+
+#topbar a:hover{  cursor:pointer;background:#444}
+
+#topbar a:active{  top:1px}
+
+</style>
+
+<div id='topbar'>
+<p>Instant Chat - Adult Cam Chat - 100% Free! 
+  <br>
+<a href="https://ehhfjf.datedats.com/?utm_source=5f1b2eb75eeef" target="_blank">Join Now</a>
+</p>
+</div> -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$(document).on('click','#image-download',function(e)
+{
+e.preventDefault();
+var url = $(this).data('url');
+var title = $(this).data('title');
+var x=new XMLHttpRequest();
+x.open( "GET", url , true);
+x.responseType="blob";
+x.onload= function(e){download(e.target.response, title, "image/jpg");};
+x.send();
+});
+});
+</script-->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script src='//inheritedgeneralrailroad.com/99/59/cb/9959cb27b9995ebeb975c47c825f8dfa.js'></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function()
+  {
+    $('body').addClass('xepo_ads');
+  });
+
+  $(document).on('click','.xepo_ads',function(e)
+  {
+      $(this).removeClass('xepo_ads');
+      window.open('https://inheritedgeneralrailroad.com/f2dbgriw?key=3599303f4ceed1f2635a1cca0f5e2cb4', '_blank');
+  });
+</script>
+
+<!-- Histats.com  START  (aync)-->
+<script>var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4403915,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4403915&101" alt=""></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>

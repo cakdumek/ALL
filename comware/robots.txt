@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://comware.onrender.com/sitemap.xml

@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Resize Section Background Image On Scroll - CodingDong</title>
+<link rel='canonical' href='https://codingdong.onrender.com/view-resize-section-background-image-on-scroll.html' />
+<meta content="Resize Section Background Image On Scroll Hello, I would like to know if it's possible to resize the first section background on scroll for mobiles? The image takes 100% viewport height on page load, but it crops a lot of the picture. The user should be able to view the full picture when he she scrolls. Can it shrink on scroll to something like 20vh? Please advise, Many thanks!" name="description" />
+<meta content="cakdumek, cakdum, Resize, Section, Background, Image, On, Scroll, Hello,, I, would, like, to, know, if, it's, possible, to, resize, the, first, section, background, on, scroll, for, mobiles?, The, image, takes, 100%, viewport, height, on, page, load,, but, it, crops, a, lot, of, the, picture., The, user, should, be, able, to, view, the, full, picture, when, he, she, scrolls., Can, it, shrink, on, scroll, to, something, like, 20vh?, Please, advise,, Many, thanks!" name="keywords" />
+<meta content='index, follow' name='robots' />
+<meta Content='snippet' name='googlebot' />
+<meta content='en' name='language' />
+<meta content='ID, US, CA, UK, FR, ES, JP, CN , DE' name='geo.country' />
+<meta content='Indonesia, United States, Canada, United Kingdom, France, Espana, Japan, China, Germany' name='geo.placename' />
+<meta content='2 days' name='revisit-after' />
+<meta content='never' name='expires' />
+<meta content='always' name='revisit' />
+<meta content='global' name='distribution' />
+<meta content='general' name='rating' />
+<meta content='index' name='googlebot' />
+<meta content='snippet' name='googlebot-news' />
+<meta content='index' name='googlebot-news' />
+<meta content='index' name='Googlebot-Image' />
+<meta content='index' name='Googlebot-Video' />
+<meta content='index' name='Googlebot-Mobile' />
+<meta content='index' name='Mediapartners-Google' />
+<meta content='index' name='AdsBot-Google' />
+<meta content='follow, all' name='Scooter' />
+<meta content='follow, all' name='msnbot' />
+<meta content='follow, all' name='alexabot' />
+<meta content='follow, all' name='Slurp' />
+<meta content='follow, all' name='ZyBorg' />
+<meta content='follow, all' name='Scooter' />
+<meta content='follow, all' name='seznambot' />
+<meta content='follow, all' name='ia_archiver' />
+<meta content='follow, all' name='Baiduspider' />
+<meta content='follow, all' name='BecomeBot' />
+<meta content='follow, all' name='Bingbot' />
+<meta content='follow, all' name='btbot' />
+<meta content='follow, all' name='Dotbot' />
+<meta content='follow, all' name='Yeti' />
+<meta content='follow, all' name='Teoma' />
+<meta content='follow, all' name='Yandex' />
+<meta content='follow, all' name='FAST-WebCrawler' />
+<meta content='follow, all' name='FindLinks' />
+<meta content='follow, all' name='FyberSpider' />
+<meta content='follow, all' name='008' />
+<meta content='ALL' name='SPIDERS' />
+<meta content='ALL' name='WEBCRAWLERS' />
+<meta content='1, 2, 3, 10, 11, 12, 13, ATF' name='serps' />
+<meta content='Aeiwi, Alexa, AllTheWeb, AltaVista, AOL Netfind, Anzwers, Canada, DirectHit, EuroSeek, Excite, Overture, Go, Google, HotBot, InfoMak, Kanoodle, Lycos, MasterSite, National Directory, Northern Light, SearchIt, SimpleSearch, WebsMostLinked, WebTop, What-U-Seek, AOL, Yahoo, WebCrawler, Infoseek, Excite, Magellan, LookSmart, CNET, Googlebot' name='search engines' />
+<link rel="shorcut icon" href="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/favicon.ico" />
+<meta content='' property='fb:app_id' />
+<meta content='https://www.facebook.com/cakdumek' property='fb:admins' />
+<meta content='@Wikipedia' name='twitter:site' />
+<meta content='@Wikipedia' name='twitter:creator' />
+<meta content='' name='msvalidate.01' />
+<meta content='' name='alexaVerifyID' />
+<meta content='Cakdumek, rucksdebora5@gmail.com' name='Author' />
+<meta content='all' name='robots' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{width:auto;max-width:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 5px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
+</head>
+<body>
+<header class="bg-white fixed-top">
+<nav class="navbar navbar-light bg-white mb-0">
+<div class="container justify-content-center justify-content-sm-between">
+  <a href="/" title="CodingDong" class="navbar-brand mb-1">CodingDong</a>
+  <form class="form-inline mb-1" action="/" method="get">
+<input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search">
+  </form>
+</div>  
+</nav>
+</header>
+
+
+<main id="main" class="main">
+<div class="container">  
+<div class="row content">
+<div class="col-md-9">
+<div class="col-sm-12 p-2">
+
+<h1>Resize Section Background Image On Scroll</h1>
+<p>
+
+<strong>Resizing background images with background size   CSS ...</strong> The background size CSS property lets you resize the background image of an element, overriding the default behavior of tiling the image at its full size by specifying the width and or height of the image. By doing so, you can scale the image upward or downward as desired.. <strong>Resize section background image on scroll   Coding and ...</strong> Hello, I would like to know if it's possible to resize the first section background on scroll for mobiles? The image takes 100% viewport height on page load, but it crops a lot of the picture. The user should be able to view the full picture when he she scrolls. Can it shrink on scroll to something like 20vh? Please advise, Many thanks!. <strong>Responsive Web Design Images   W3Schools</strong> Background Images. Background images can also respond to resizing and scaling. Here we will show three different methods: 1. If the background size property is set to "contain", the background image will scale, and try to fit the content area. However, the image will keep its aspect ratio (the proportional relationship between the image's width and height):. </p>
+<div style="text-align: center;"><script>
+atOptions = {
+'key' : 'd21fb9b02817c0ac553e0041caac120a',
+'format' : 'iframe',
+'height' : 250,
+'width' : 300,
+'params' : {}
+};
+document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://inheritedgeneralrailroad.com/d21fb9b02817c0ac553e0041caac120a/invoke.js"></scr' + 'ipt>');
+</script></div>
+<div><ul class="list-group">
+<div class="col-sm-12 p-2">
+<li class="list-group-item"><a class="badge-secondary" href="view-split-sticky-sections.html">Split Sticky Sections</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-remove-logo-from-header-injecting-code-didnt-work.html">Remove Logo From Header Injecting Code Didnt Work</a></li>
+<li class="list-group-item"><a class="badge-dark" href="view-change-background-image-size-on-mobile.html">Change Background Image Size On Mobile</a></li>
+<li class="list-group-item"><a class="badge-warning" href="view-product-carousel-&-slideshow-ui-and-navigation-arrows-missing-on-mobile-in-7.1.html">Product Carousel & Slideshow Ui And Navigation Arrows Missing On Mobile In 7.1</a></li>
+</div>
+</ul></div>
+
+
+<!--ads/auto.txt-->
+</div> 
+<div class="col-sm-12">
+
+<div class="row">
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://i.pinimg.com/originals/10/36/9a/10369a40d827098e9e32d2020c43ceae.gif" data-lightbox="roadtrip" data-title="Download a FREE Blurb Expanding Section on Scroll for Divi in 2020 | Colorful backgrounds, Page ...">
+<img class="card-img v-image" src="https://tse3.mm.bing.net/th?id=OIP.RP0iSQxFAfyrtwm4qcrx5QHaEe&pid=Api&P=0&w=300&h=300" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Download a FREE Blurb Expanding Section on Scroll for Divi in 2020 | Colorful backgrounds, Page ...">
+
+</a>
+<div class="card-body text-center">  	
+<div class="d-block mb-2">
+<a href="https://i.pinimg.com/originals/10/36/9a/10369a40d827098e9e32d2020c43ceae.gif" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Download a FREE Blurb Expanding Section on Scroll for Divi in 2020 | Colorful backgrounds, Page ...</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://i2.wp.com/css-tricks.com/wp-content/uploads/2014/09/state-2.png?resize=640%2C613&ssl=1" data-lightbox="roadtrip" data-title="Background Image Css Fixed Height | Background Editing PicsArt">
+<img class="card-img v-image" src="https://tse3.mm.bing.net/th?id=OIP.OgDugDRNokXZhpNCmabFZwHaHG&pid=Api&P=0&w=300&h=300" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Background Image Css Fixed Height | Background Editing PicsArt">
+
+</a>
+<div class="card-body text-center">  	
+<div class="d-block mb-2">
+<a href="https://i2.wp.com/css-tricks.com/wp-content/uploads/2014/09/state-2.png?resize=640%2C613&ssl=1" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Background Image Css Fixed Height | Background Editing PicsArt</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.freeiconspng.com/uploads/scroll-frame-background-png-19.png" data-lightbox="roadtrip" data-title="Scroll frame background png #26411 - Free Icons and PNG Backgrounds">
+<img class="card-img v-image" src="https://www.freeiconspng.com/uploads/scroll-frame-background-png-19.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Scroll frame background png #26411 - Free Icons and PNG Backgrounds">
+
+</a>
+<div class="card-body text-center">  	
+<div class="d-block mb-2">
+<a href="https://www.freeiconspng.com/uploads/scroll-frame-background-png-19.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Scroll frame background png #26411 - Free Icons and PNG Backgrounds</h3>
+</div>
+</div>
+</div>
+ 
+<div class="d-block p-3"> 
+<p>
+Hello, I would like to know if it's possible to resize the first section background on scroll for mobiles? The image takes 100% viewport height on page load, but it crops a lot of the picture. The user should be able to view the full picture when he she scrolls. Can it shrink on scroll to something like 20vh? Please advise, Many thanks!. Definition and Usage. The background size property specifies the size of the background images.. There are four different syntaxes you can use with this property: the keyword syntax ("auto", "cover" and "contain"), the one value syntax (sets the width of the image (height becomes "auto"), the two value syntax (first value: width of the image, second value: height), and the multiple background .... The Photoshop Express image resizing tool helps you get great results fast. The perfect size for social media and the web. Quickly resize a photo for Facebook, a LinkedIn profile image, Twitter banner, or Youtube thumbnail.. The height is set to auto and the image will keep its aspect ratio, i.e. background size: 100 px;  * is identical to *  background size: 100 px auto; This code will scale our 200×200 image to 100 .... To resize an image on Windows, you can easily use the built in Photos app or Microsoft Paint. In the Photos app, there's a "Resize" option hidden in the side menu, which you can use to change the .... </p>
+</div> 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://cdn.xl.thumbs.canstockphoto.com/vertical-scroll-line-icon-resize-in-height-vector-illustration-isolated-on-white-scrolling-gesture-clipart-vector_csp67823055.jpg" data-lightbox="roadtrip" data-title="Swipe vertically line icon. Swipe vertically vector line icon isolated on white background ...">
+<img class="card-img v-image" src="https://cdn.xl.thumbs.canstockphoto.com/vertical-scroll-line-icon-resize-in-height-vector-illustration-isolated-on-white-scrolling-gesture-clipart-vector_csp67823055.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Swipe vertically line icon. Swipe vertically vector line icon isolated on white background ...">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://cdn.xl.thumbs.canstockphoto.com/vertical-scroll-line-icon-resize-in-height-vector-illustration-isolated-on-white-scrolling-gesture-clipart-vector_csp67823055.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Swipe vertically line icon. Swipe vertically vector line icon isolated on white background ...</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.pngkey.com/png/detail/1006-10063470_5-scroll-down-to-the-settings-section-deezer.png" data-lightbox="roadtrip" data-title="5 Scroll Down To The Settings Section - Deezer White Transparent Background - Free Transparent ...">
+<img class="card-img v-image" src="https://www.pngkey.com/png/detail/1006-10063470_5-scroll-down-to-the-settings-section-deezer.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="5 Scroll Down To The Settings Section - Deezer White Transparent Background - Free Transparent ...">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.pngkey.com/png/detail/1006-10063470_5-scroll-down-to-the-settings-section-deezer.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">5 Scroll Down To The Settings Section - Deezer White Transparent Background - Free Transparent ...</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.freeiconspng.com/uploads/antique-scroll-frame-background-png-23.jpg" data-lightbox="roadtrip" data-title="Antique scroll frame background png #26415 - Free Icons and PNG Backgrounds">
+<img class="card-img v-image" src="https://www.freeiconspng.com/uploads/antique-scroll-frame-background-png-23.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Antique scroll frame background png #26415 - Free Icons and PNG Backgrounds">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.freeiconspng.com/uploads/antique-scroll-frame-background-png-23.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Antique scroll frame background png #26415 - Free Icons and PNG Backgrounds</h3>
+</div>
+</div>
+</div>
+<div class="d-block p-3"> 
+<p>
+<strong>How to Resize Background Images with CSS3   SitePoint</strong> The height is set to auto and the image will keep its aspect ratio, i.e. background size: 100 px;  * is identical to *  background size: 100 px auto; This code will scale our 200×200 image to 100 .... <strong>Online image resizer | Free photo resizer | Adobe ...</strong> The Photoshop Express image resizing tool helps you get great results fast. The perfect size for social media and the web. Quickly resize a photo for Facebook, a LinkedIn profile image, Twitter banner, or Youtube thumbnail.. </p>
+</div>
+<div class="col-12 mb-4">
+<div class="card">
+<img class="card-img-top v-cover" src="https://www.freeiconspng.com/uploads/scroll-transparent-png-13.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Scroll transparent png #26405 - Free Icons and PNG Backgrounds">
+<div class="card-body">
+<h3 class="h5"><b>Scroll transparent png #26405 - Free Icons and PNG Backgrounds</b></h3>
+</div> 
+</div>
+</div>
+<div class="d-block p-3"> 
+<p>
+The height is set to auto and the image will keep its aspect ratio, i.e. background size: 100 px;  * is identical to *  background size: 100 px auto; This code will scale our 200×200 image to 100 .... The Photoshop Express image resizing tool helps you get great results fast. The perfect size for social media and the web. Quickly resize a photo for Facebook, a LinkedIn profile image, Twitter banner, or Youtube thumbnail.. The Fallback Way . Here is an example that uses a background image for the body of a page and which sets the size to 100% so that it will always stretch to fit the screen. This method isn't perfect, and it might cause some uncovered space, but by using the background position property, you should be able to eliminate the problem and still accommodate older browsers.. The difference. cover tells the browser to make sure the image always covers the entire container, even if it has to stretch the image or cut a little bit off one of the edges.contain, on the other hand, says to always show the whole image, even if that leaves a little space to the sides or bottom.. The default keyword — auto — tells the browser to automatically calculate the size based on .... Free photo resizer and image compressor to crop, resize images in JPEG|PNG|GIF format to the exact pixels or proportion you specified, compress them to reduce the file sizes, making it easy to use them as your desktop wallpaper, Facebook cover photo, Twitter profile photo, avatar icons, etc.. Re: Background Image resize Ok, try changing the page type on the pages tab to the Splash page type, if it's available for the theme you're using. The Splash page type uses the background image for the entire page background on most themes that have it.. How to resize a background image I am attempting to put in a background image in a PowerPoint slide. In previous versions of Office, it was easy to do, but in Office 365 this seems to be impossible. All I want to do is paste the image I have into the upper right corner of the slide and have it appear on each slide. I right click on the slide .... </p>
+
+<div><ul class="list-group">
+<div class="col-sm-12 p-2">
+<strong>READ MORE:</strong>
+<li class="list-group-item"><a class="badge-dark" href="view-i-cant-get-my-google-sheet-to-be-responsive-what-am-i-doing-wrong.html">I Cant Get My Google Sheet To Be Responsive What Am I Doing Wrong</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-changing-logocolor-for-specific-page--change-logocolor-when-tapping-mobile-menu-navigation.html">Changing Logocolor For Specific Page  Change Logocolor When Tapping Mobile Menu Navigation</a></li>
+<li class="list-group-item"><a class="badge-secondary" href="view-2-column-mobile-view.html">2 Column Mobile View</a></li>
+<li class="list-group-item"><a class="badge-warning" href="view-hover-state-on-mobile-menu.html">Hover State On Mobile Menu</a></li>
+</div>
+</ul></div>
+</div> 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.freeiconspng.com/uploads/old-scroll-png-32.png" data-lightbox="roadtrip" data-title="Old scroll png #26424 - Free Icons and PNG Backgrounds">
+<img class="card-img v-image" src="https://www.freeiconspng.com/uploads/old-scroll-png-32.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Old scroll png #26424 - Free Icons and PNG Backgrounds">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.freeiconspng.com/uploads/old-scroll-png-32.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Old scroll png #26424 - Free Icons and PNG Backgrounds</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://onepagelove.imgix.net/2019/10/squarespace-add-banner-background-image.jpg?fit=crop&fp-y=0&w=1280&min-w=1280&max-h=2560&auto=compress" data-lightbox="roadtrip" data-title="How to achieve Parallax Scrolling in a Squarespace Landing Page [video]">
+<img class="card-img v-image" src="https://onepagelove.imgix.net/2019/10/squarespace-add-banner-background-image.jpg?fit=crop&fp-y=0&w=1280&min-w=1280&max-h=2560&auto=compress" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How to achieve Parallax Scrolling in a Squarespace Landing Page [video]">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://onepagelove.imgix.net/2019/10/squarespace-add-banner-background-image.jpg?fit=crop&fp-y=0&w=1280&min-w=1280&max-h=2560&auto=compress" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How to achieve Parallax Scrolling in a Squarespace Landing Page [video]</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/fullPage.png" data-lightbox="roadtrip" data-title="Continuous Vertical Scrolling - fullPage.js">
+<img class="card-img v-image" src="https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/fullPage.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Continuous Vertical Scrolling - fullPage.js">
+
+</a>
+<div class="card-body text-center"> 
+<div class="d-block mb-2">
+<a href="https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/fullPage.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div> 
+<h3 class="h6">Continuous Vertical Scrolling - fullPage.js</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://i.ytimg.com/vi/GS2JL6BG6LM/maxresdefault.jpg" data-lightbox="roadtrip" data-title="How to create parallax scrolling with full width background in the Richman WordPress theme ...">
+<img class="card-img v-image" src="https://i.ytimg.com/vi/GS2JL6BG6LM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How to create parallax scrolling with full width background in the Richman WordPress theme ...">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://i.ytimg.com/vi/GS2JL6BG6LM/maxresdefault.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How to create parallax scrolling with full width background in the Richman WordPress theme ...</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://i.pinimg.com/originals/93/8f/53/938f53048d6d09fa5622334c88906af6.jpg" data-lightbox="roadtrip" data-title="Background Powerpoint: Find best latest Background Powerpoint in HD for your PC desktop ...">
+<img class="card-img v-image" src="https://i.pinimg.com/originals/93/8f/53/938f53048d6d09fa5622334c88906af6.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Background Powerpoint: Find best latest Background Powerpoint in HD for your PC desktop ...">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://i.pinimg.com/originals/93/8f/53/938f53048d6d09fa5622334c88906af6.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Background Powerpoint: Find best latest Background Powerpoint in HD for your PC desktop ...</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://i.pinimg.com/originals/36/44/2d/36442da0ac71c272a63eecf0f47b5423.jpg" data-lightbox="roadtrip" data-title="&#39;Crystal&#39; is a free long-scrolling One Page HTML template with a clean design. Features include ...">
+<img class="card-img v-image" src="https://i.pinimg.com/originals/36/44/2d/36442da0ac71c272a63eecf0f47b5423.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="&#39;Crystal&#39; is a free long-scrolling One Page HTML template with a clean design. Features include ...">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://i.pinimg.com/originals/36/44/2d/36442da0ac71c272a63eecf0f47b5423.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">&#39;Crystal&#39; is a free long-scrolling One Page HTML template with a clean design. Features include ...</h3>
+</div>
+</div>
+</div>
+<div class="d-block p-3"> 
+<p>
+<strong>How To Resize Images And Photos In Windows</strong> On the PicPick splash screen, click the “Open an existing image” link, and then find the image you want to resize. You can also drag an image from File Explorer onto an open PicPick window. On the toolbar, click the “Resize” button, and then click “Image Resize” on the dropdown menu. PicPick lets you resize by percentage or by pixels.. <strong>Online image resizer | Free photo resizer | Adobe ...</strong> The Photoshop Express image resizing tool helps you get great results fast. The perfect size for social media and the web. Quickly resize a photo for Facebook, a LinkedIn profile image, Twitter banner, or Youtube thumbnail.. </p>
+</div> 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="http://themify.me/wp-content/product-img/fullpane.jpg" data-lightbox="roadtrip" data-title="Fullpane - Full Section Scrolling">
+<img class="card-img v-image" src="http://themify.me/wp-content/product-img/fullpane.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Fullpane - Full Section Scrolling">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="http://themify.me/wp-content/product-img/fullpane.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Fullpane - Full Section Scrolling</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://i2.wp.com/geeknizer.com/wp-content/uploads/2013/03/livewallpaper-iphone.jpg?resize=638%2C301" data-lightbox="roadtrip" data-title="Set LiveWallpaper, Scrolling Wallpaper on iPhone">
+<img class="card-img v-image" src="https://i2.wp.com/geeknizer.com/wp-content/uploads/2013/03/livewallpaper-iphone.jpg?resize=638%2C301" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Set LiveWallpaper, Scrolling Wallpaper on iPhone">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://i2.wp.com/geeknizer.com/wp-content/uploads/2013/03/livewallpaper-iphone.jpg?resize=638%2C301" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Set LiveWallpaper, Scrolling Wallpaper on iPhone</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://i.pinimg.com/originals/60/73/f9/6073f950038fc73ff19c63b269d23b26.jpg" data-lightbox="roadtrip" data-title="Fixed Background Scrolling Layout | Layout, Coding tutorials, Web design">
+<img class="card-img v-image" src="https://i.pinimg.com/originals/60/73/f9/6073f950038fc73ff19c63b269d23b26.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Fixed Background Scrolling Layout | Layout, Coding tutorials, Web design">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://i.pinimg.com/originals/60/73/f9/6073f950038fc73ff19c63b269d23b26.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Fixed Background Scrolling Layout | Layout, Coding tutorials, Web design</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/media/add-scrolling-screen/move-resize-pen.png" data-lightbox="roadtrip" data-title="Add a scrolling screen to a canvas app - Power Apps | Microsoft Docs">
+<img class="card-img v-image" src="https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/media/add-scrolling-screen/move-resize-pen.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Add a scrolling screen to a canvas app - Power Apps | Microsoft Docs">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/media/add-scrolling-screen/move-resize-pen.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Add a scrolling screen to a canvas app - Power Apps | Microsoft Docs</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.freeiconspng.com/uploads/antique-scroll-image-png-7.png" data-lightbox="roadtrip" data-title="Antique scroll image png #26399 - Free Icons and PNG Backgrounds">
+<img class="card-img v-image" src="https://www.freeiconspng.com/uploads/antique-scroll-image-png-7.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Antique scroll image png #26399 - Free Icons and PNG Backgrounds">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.freeiconspng.com/uploads/antique-scroll-image-png-7.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Antique scroll image png #26399 - Free Icons and PNG Backgrounds</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://ihatetomatoes.net/wp-content/uploads/2014/01/img_simple-parallax-scrolling-tutorial-01.jpg" data-lightbox="roadtrip" data-title="Simple parallax scrolling tutorial">
+<img class="card-img v-image" src="https://ihatetomatoes.net/wp-content/uploads/2014/01/img_simple-parallax-scrolling-tutorial-01.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Simple parallax scrolling tutorial">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://ihatetomatoes.net/wp-content/uploads/2014/01/img_simple-parallax-scrolling-tutorial-01.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Simple parallax scrolling tutorial</h3>
+</div>
+</div>
+</div>
+</div>
+<p>
+If you think this blog article is useful, please support me by sharing this website article post to your social media accounts such as Facebook, Instagram and others or you can bookmark this website page with the title <strong><a href="/view-resize-section-background-image-on-scroll.html">Resize Section Background Image On Scroll</a></strong> use Ctrl + D for a laptop with a windows operating system or Command + D for a computer with a Mac OS operating system. If you are using a cellphone, you can also use the drawer menu from the browser you are using. Whether it's Windows, Mac, iOs or Android operating system, you will still be able to bookmark this blog page.
+</p>
+
+<div style="text-align: center;"><script>
+atOptions = {
+'key' : 'd21fb9b02817c0ac553e0041caac120a',
+'format' : 'iframe',
+'height' : 250,
+'width' : 300,
+'params' : {}
+};
+document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://inheritedgeneralrailroad.com/d21fb9b02817c0ac553e0041caac120a/invoke.js"></scr' + 'ipt>');
+</script></div>
+
+<div class="clearfix"></div> 
+<div class="d-block mt-4 p-3">
+Source: <a href="https://yahoo.com" rel="nofollow noopener">yahoo.com</a>
+</div>
+<div><ul class="list-group">
+<div class="col-sm-12 p-2">
+<strong>RELATED POSTS:</strong>
+<li class="list-group-item"><a class="badge-dark" href="view-positioning-of-mega-menu-css-problems.html">Positioning Of Mega Menu Css Problems</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-best-scheduling-tools.html">Best Scheduling Tools</a></li>
+<li class="list-group-item"><a class="badge-secondary" href="view-add-space-to-vertically-stacked-content-on-mobile.html">Add Space To Vertically Stacked Content On Mobile</a></li>
+<li class="list-group-item"><a class="badge-light" href="view-custom-form-validation-intercepting-the-form-submission.html">Custom Form Validation Intercepting The Form Submission</a></li>
+<li class="list-group-item"><a class="badge-warning" href="view-positioning-of-the-shopify-buy-button-on-product-page-7.0.html">Positioning Of The Shopify Buy Button On Product Page 7.0</a></li>
+<li class="list-group-item"><a class="badge-dark" href="view-changing-logo-color-on-different-site-pages.html">Changing Logo Color On Different Site Pages</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-different-footer-for-mobile.html">Different Footer For Mobile</a></li>
+</div>
+</ul></div>
+</div>
+</div> 
+<div class="col-md-3">
+<div class="col-sm-12 widget">
+<h3 class="widget-title">Recent Posts</h3>
+<ul class="list-group">
+<li class="list-group-item"><a href="https://moviz.my.id/" target="_blank">Stream Free Movies & TV Shows</a></li>
+<li class="list-group-item"><a href="view-complete-avis-2021-comment-ça-marche.html">Complete Avis 2021 Comment ça Marche</a></li>
+<li class="list-group-item"><a href="view-questce-que-lélargissement-du-pénis-de-collosel.html">Questce Que Lélargissement Du Pénis De Collosel</a></li>
+<li class="list-group-item"><a href="view-adding-iframes-to-my-site-because-the-javascript-code-is-messing-with-site-formatting.html">Adding Iframes To My Site Because The Javascript Code Is Messing With Site Formatting</a></li>
+<li class="list-group-item"><a href="view-create-3-column-image-grid-with-hover-before-and-after-effect.html">Create 3 Column Image Grid With Hover Before And After Effect</a></li>
+<li class="list-group-item"><a href="view-split-sticky-sections.html">Split Sticky Sections</a></li>
+<li class="list-group-item"><a href="view-moving/changing-close-button-in-lightbox-view-on-gallery-page.html">Moving/changing Close Button In Lightbox View On Gallery Page</a></li>
+<li class="list-group-item"><a href="view-i-cant-get-my-google-sheet-to-be-responsive-what-am-i-doing-wrong.html">I Cant Get My Google Sheet To Be Responsive What Am I Doing Wrong</a></li>
+<li class="list-group-item"><a href="view-disable-customer-order-shipping-emails.html">Disable Customer Order Shipping Emails</a></li>
+<li class="list-group-item"><a href="view-positioning-of-mega-menu-css-problems.html">Positioning Of Mega Menu Css Problems</a></li>
+<li class="list-group-item"><a href="view-remove-logo-from-header-injecting-code-didnt-work.html">Remove Logo From Header Injecting Code Didnt Work</a></li>
+<li class="list-group-item"><a href="view-anchor-link-coding-help.html">Anchor Link Coding Help</a></li>
+<li class="list-group-item"><a href="view-changing-logocolor-for-specific-page--change-logocolor-when-tapping-mobile-menu-navigation.html">Changing Logocolor For Specific Page  Change Logocolor When Tapping Mobile Menu Navigation</a></li>
+<li class="list-group-item"><a href="view-accordion-issues-read-more-button-issues.html">Accordion Issues Read More Button Issues</a></li>
+<li class="list-group-item"><a href="view-best-scheduling-tools.html">Best Scheduling Tools</a></li>
+<li class="list-group-item"><a href="view-change-background-image-size-on-mobile.html">Change Background Image Size On Mobile</a></li>
+<li class="list-group-item"><a href="view-do-not-have-header-appear-on-scroll-for-desktop-view-only-7.1.html">Do Not Have Header Appear On Scroll For Desktop View Only 7.1</a></li>
+<li class="list-group-item"><a href="view-2-column-mobile-view.html">2 Column Mobile View</a></li>
+<li class="list-group-item"><a href="view-how-can-i-prevent-my-graph-from-becoming-too-small-on-mobile.html">How Can I Prevent My Graph From Becoming Too Small On Mobile</a></li>
+<li class="list-group-item"><a href="view-add-space-to-vertically-stacked-content-on-mobile.html">Add Space To Vertically Stacked Content On Mobile</a></li>
+<li class="list-group-item"><a href="view-product-carousel-&-slideshow-ui-and-navigation-arrows-missing-on-mobile-in-7.1.html">Product Carousel & Slideshow Ui And Navigation Arrows Missing On Mobile In 7.1</a></li>
+<li class="list-group-item"><a href="view-change-related-product-alignement.html">Change Related Product Alignement</a></li>
+<li class="list-group-item"><a href="view-hover-state-on-mobile-menu.html">Hover State On Mobile Menu</a></li>
+<li class="list-group-item"><a href="view-codeblock-doesnt-show-on-mobile.html">Codeblock Doesnt Show On Mobile</a></li>
+<li class="list-group-item"><a href="view-custom-form-validation-intercepting-the-form-submission.html">Custom Form Validation Intercepting The Form Submission</a></li>
+<li class="list-group-item"><a href="view-redirecting-to-productspecific-pages-after-order-confirmation-page.html">Redirecting To Productspecific Pages After Order Confirmation Page</a></li>
+<li class="list-group-item"><a href="view-embed-document-repository.html">Embed Document Repository</a></li>
+<li class="list-group-item"><a href="view-changing-the-background-colour-of-one-page-on-my-website.html">Changing The Background Colour Of One Page On My Website</a></li>
+<li class="list-group-item"><a href="view-move-from-heroku-to-squarespace.html">Move From Heroku To Squarespace</a></li>
+<li class="list-group-item"><a href="view-positioning-of-the-shopify-buy-button-on-product-page-7.0.html">Positioning Of The Shopify Buy Button On Product Page 7.0</a></li>
+<li class="list-group-item"><a href="view-custom-cart-icon-brine-7.0.html">Custom Cart Icon Brine 7.0</a></li>
+<li class="list-group-item"><a href="view-adding-scroll-arrows-to-brine-product-page-photo-slideshow.html">Adding Scroll Arrows To Brine Product Page Photo Slideshow</a></li>
+<li class="list-group-item"><a href="view-logo-load-javascript-set-as-null-after-first-call-for-rest-of-session.html">Logo Load Javascript Set As Null After First Call For Rest Of Session</a></li>
+<li class="list-group-item"><a href="view-inverting-cursor-across-black/dark-backgrounds.html">Inverting Cursor Across Black/dark Backgrounds</a></li>
+<li class="list-group-item"><a href="view-changing-logo-color-on-different-site-pages.html">Changing Logo Color On Different Site Pages</a></li>
+<li class="list-group-item"><a href="view-make-blog-masonry-grid-unclickable.html">Make Blog Masonry Grid Unclickable</a></li>
+<li class="list-group-item"><a href="view-how-to-add-javascript-to-navigation-button-7.1.html">How To Add Javascript To Navigation Button 7.1</a></li>
+<li class="list-group-item"><a href="view-full-width-image-that-doesnt-impact-other-content-block.html">Full Width Image That Doesnt Impact Other Content Block</a></li>
+<li class="list-group-item"><a href="view-different-footer-for-mobile.html">Different Footer For Mobile</a></li>
+<li class="list-group-item"><a href="view-gradient-start-and-finish-over-text-instead-of-over-entire-block.html">Gradient Start And Finish Over Text Instead Of Over Entire Block</a></li>
+<li class="list-group-item"><a href="view-how-to-remove-all-category-from-shop-in-tresoire-and-edit-button-on-forms-to-full-width.html">How To Remove All Category From Shop In Tresoire And Edit Button On Forms To Full Width</a></li>
+<li class="list-group-item"><a href="view-hide-header-and-footer-on-confirmation-page.html">Hide Header And Footer On Confirmation Page</a></li>
+<li class="list-group-item"><a href="view-carousel-block.html">Carousel Block</a></li>
+<li class="list-group-item"><a href="view-removing-next/previous-post-in-7.0-blog.html">Removing Next/previous Post In 7.0 Blog</a></li>
+<li class="list-group-item"><a href="view-how-do-i-make-a-row-of-text-blocks-maintain-equal-height-and-responsive.html">How Do I Make A Row Of Text Blocks Maintain Equal Height And Responsive</a></li>
+<li class="list-group-item"><a href="view-instagram-blocks-not-showing-captions-descriptions.html">Instagram Blocks Not Showing Captions Descriptions</a></li>
+<li class="list-group-item"><a href="view-removing-a-drop-shadow-from-an-image.html">Removing A Drop Shadow From An Image</a></li>
+<li class="list-group-item"><a href="view-7.1-split-section-in-3.html">7.1 Split Section In 3</a></li>
+<li class="list-group-item"><a href="view-quote-block-css.html">Quote Block Css</a></li>
+<li class="list-group-item"><a href="view-how-do-i-enable-script.html">How Do I Enable Script</a></li>
+<li class="list-group-item"><a href="view-layout-4-columns-as-2-columns-on-mobile.html">Layout 4 Columns As 2 Columns On Mobile</a></li>
+</ul>
+</div>
+<div class="col-sm-12 widget">
+<!--ads/auto.txt-->
+
+<!-- ads -->
+</div>
+</div> 
+</div>
+<div class="row footer">
+<div class="col-md-12 text-center">
+<a href="dmca.html">Dmca</a>
+<a href="contact.html">Contact</a>
+<a href="disclaimer.html">Disclaimer</a>
+<a href="privacy.html">Privacy</a>
+<a href="sitemap.html">Sitemaps</a>
+<div style="text-align: center; font-size: 90%;">Copyright &copy; <script>document.write(new Date().getFullYear());</script> <strong><a href="/">CodingDong</a></strong>. All Rights Reserved.
+ <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+</div>
+</div>
+</div>
+<!--<style>
+#topbar{  background:#ddd;  width:100%;  text-align:center;  color:#333;  padding:5px;  overflow:hidden;  height:89px;  z-index:1000;  font-family:Georgia;  font-size:17px;  line-height:30px;  position:fixed;  bottom:0;  left:0;  border-top:3px solid #26ADE4;  box-shadow:0 1px 5px rgba(0,0,0,.7);
+}
+
+#topbar a{-webkit-box-shadow:rgba(0,0,0,0.278431) 1px 1px 3px; background:#26ADE4;  border-bottom-left-radius:4px;  border-bottom-right-radius:4px;  border-top-left-radius:4px;  border-top-right-radius:4px;  border:none;  box-shadow:rgba(0,0,0,0.278431) 1px 1px 3px;  color:white;  cursor:pointer;  font-size:0.95em;  margin:0px 0px 0px 7px;  outline:none;  padding:5px 13px 5px;  position:relative;  text-decoration:initial;
+font-size:19px;
+}
+
+#topbar a:hover{  cursor:pointer;background:#444}
+
+#topbar a:active{  top:1px}
+
+</style>
+
+<div id='topbar'>
+<p>Instant Chat - Adult Cam Chat - 100% Free! 
+  <br>
+<a href="https://ehhfjf.datedats.com/?utm_source=5f1b2eb75eeef" target="_blank">Join Now</a>
+</p>
+</div> -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$(document).on('click','#image-download',function(e)
+{
+e.preventDefault();
+var url = $(this).data('url');
+var title = $(this).data('title');
+var x=new XMLHttpRequest();
+x.open( "GET", url , true);
+x.responseType="blob";
+x.onload= function(e){download(e.target.response, title, "image/jpg");};
+x.send();
+});
+});
+</script-->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script src='//inheritedgeneralrailroad.com/99/59/cb/9959cb27b9995ebeb975c47c825f8dfa.js'></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function()
+  {
+    $('body').addClass('xepo_ads');
+  });
+
+  $(document).on('click','.xepo_ads',function(e)
+  {
+      $(this).removeClass('xepo_ads');
+      window.open('https://inheritedgeneralrailroad.com/f2dbgriw?key=3599303f4ceed1f2635a1cca0f5e2cb4', '_blank');
+  });
+</script>
+
+<!-- Histats.com  START  (aync)-->
+<script>var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4403915,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4403915&101" alt=""></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>

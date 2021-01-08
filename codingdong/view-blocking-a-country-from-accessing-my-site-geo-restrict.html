@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Blocking A Country From Accessing My Site Geo Restrict - CodingDong</title>
+<link rel='canonical' href='https://codingdong.onrender.com/view-blocking-a-country-from-accessing-my-site-geo-restrict.html' />
+<meta content="Blocking A Country From Accessing My Site Geo Restrict Conclusion. In this tutorial, you’ve learned the easy way to block or allow visitors from specific countries. All you need to do is generate the country’s IP address via Country IP Blocks, then insert an access control list (ACL) into your .htaccess file.. We hope that this simple guide is helpful." name="description" />
+<meta content="cakdumek, cakdum, Blocking, A, Country, From, Accessing, My, Site, Geo, Restrict, Conclusion., In, this, tutorial,, you’ve, learned, the, easy, way, to, block, or, allow, visitors, from, specific, countries., All, you, need, to, do, is, generate, the, country’s, IP, address, via, Country, IP, Blocks,, then, insert, an, access, control, list, (ACL), into, your, .htaccess, file.., We, hope, that, this, simple, guide, is, helpful." name="keywords" />
+<meta content='index, follow' name='robots' />
+<meta Content='snippet' name='googlebot' />
+<meta content='en' name='language' />
+<meta content='ID, US, CA, UK, FR, ES, JP, CN , DE' name='geo.country' />
+<meta content='Indonesia, United States, Canada, United Kingdom, France, Espana, Japan, China, Germany' name='geo.placename' />
+<meta content='2 days' name='revisit-after' />
+<meta content='never' name='expires' />
+<meta content='always' name='revisit' />
+<meta content='global' name='distribution' />
+<meta content='general' name='rating' />
+<meta content='index' name='googlebot' />
+<meta content='snippet' name='googlebot-news' />
+<meta content='index' name='googlebot-news' />
+<meta content='index' name='Googlebot-Image' />
+<meta content='index' name='Googlebot-Video' />
+<meta content='index' name='Googlebot-Mobile' />
+<meta content='index' name='Mediapartners-Google' />
+<meta content='index' name='AdsBot-Google' />
+<meta content='follow, all' name='Scooter' />
+<meta content='follow, all' name='msnbot' />
+<meta content='follow, all' name='alexabot' />
+<meta content='follow, all' name='Slurp' />
+<meta content='follow, all' name='ZyBorg' />
+<meta content='follow, all' name='Scooter' />
+<meta content='follow, all' name='seznambot' />
+<meta content='follow, all' name='ia_archiver' />
+<meta content='follow, all' name='Baiduspider' />
+<meta content='follow, all' name='BecomeBot' />
+<meta content='follow, all' name='Bingbot' />
+<meta content='follow, all' name='btbot' />
+<meta content='follow, all' name='Dotbot' />
+<meta content='follow, all' name='Yeti' />
+<meta content='follow, all' name='Teoma' />
+<meta content='follow, all' name='Yandex' />
+<meta content='follow, all' name='FAST-WebCrawler' />
+<meta content='follow, all' name='FindLinks' />
+<meta content='follow, all' name='FyberSpider' />
+<meta content='follow, all' name='008' />
+<meta content='ALL' name='SPIDERS' />
+<meta content='ALL' name='WEBCRAWLERS' />
+<meta content='1, 2, 3, 10, 11, 12, 13, ATF' name='serps' />
+<meta content='Aeiwi, Alexa, AllTheWeb, AltaVista, AOL Netfind, Anzwers, Canada, DirectHit, EuroSeek, Excite, Overture, Go, Google, HotBot, InfoMak, Kanoodle, Lycos, MasterSite, National Directory, Northern Light, SearchIt, SimpleSearch, WebsMostLinked, WebTop, What-U-Seek, AOL, Yahoo, WebCrawler, Infoseek, Excite, Magellan, LookSmart, CNET, Googlebot' name='search engines' />
+<link rel="shorcut icon" href="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/favicon.ico" />
+<meta content='' property='fb:app_id' />
+<meta content='https://www.facebook.com/cakdumek' property='fb:admins' />
+<meta content='@Wikipedia' name='twitter:site' />
+<meta content='@Wikipedia' name='twitter:creator' />
+<meta content='' name='msvalidate.01' />
+<meta content='' name='alexaVerifyID' />
+<meta content='Cakdumek, rucksdebora5@gmail.com' name='Author' />
+<meta content='all' name='robots' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{width:auto;max-width:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 5px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
+</head>
+<body>
+<header class="bg-white fixed-top">
+<nav class="navbar navbar-light bg-white mb-0">
+<div class="container justify-content-center justify-content-sm-between">
+  <a href="/" title="CodingDong" class="navbar-brand mb-1">CodingDong</a>
+  <form class="form-inline mb-1" action="/" method="get">
+<input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search">
+  </form>
+</div>  
+</nav>
+</header>
+
+
+<main id="main" class="main">
+<div class="container">  
+<div class="row content">
+<div class="col-md-9">
+<div class="col-sm-12 p-2">
+
+<h1>Blocking A Country From Accessing My Site Geo Restrict</h1>
+<p>
+
+<strong>How to Block Entire Countries from Accessing Your Website</strong> If you want to see how many lines it would take in.htaccess to block a country, try using ip2location. To block the US, you need over 150,000 lines of text! The bottom line is this, do not.... <strong>How To Block A Country In WordPress? (Geoblocking Methods ...</strong> All IPs from the chosen countries will be blocked from accessing your website. Step 4: Click on the Block Countries present at the bottom of the page. That’s it! You’ve successfully blocked all IP addresses coming in from these IP addresses. The country blocked will no longer see your website appear in the search results.. <strong>How to Allow or Block Visitors from Specific Countries ...</strong> Head to Country IP Blocks homepage. Select the countries you want to block or allow. For the Select Format section, choose Apache.htaccess Deny or Apache.htaccess Allow. The choice depends on whether you want to block or allow visitors from those countries.. </p>
+<div style="text-align: center;"><script>
+atOptions = {
+'key' : 'd21fb9b02817c0ac553e0041caac120a',
+'format' : 'iframe',
+'height' : 250,
+'width' : 300,
+'params' : {}
+};
+document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://inheritedgeneralrailroad.com/d21fb9b02817c0ac553e0041caac120a/invoke.js"></scr' + 'ipt>');
+</script></div>
+<div><ul class="list-group">
+<div class="col-sm-12 p-2">
+<li class="list-group-item"><a class="badge-secondary" href="view-split-sticky-sections.html">Split Sticky Sections</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-remove-logo-from-header-injecting-code-didnt-work.html">Remove Logo From Header Injecting Code Didnt Work</a></li>
+<li class="list-group-item"><a class="badge-dark" href="view-change-background-image-size-on-mobile.html">Change Background Image Size On Mobile</a></li>
+<li class="list-group-item"><a class="badge-warning" href="view-product-carousel-&-slideshow-ui-and-navigation-arrows-missing-on-mobile-in-7.1.html">Product Carousel & Slideshow Ui And Navigation Arrows Missing On Mobile In 7.1</a></li>
+</div>
+</ul></div>
+
+
+<!--ads/auto.txt-->
+</div> 
+<div class="col-sm-12">
+
+<div class="row">
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.smartdnsproxy.com/UserDocs/ck_1-geoblocking.png" data-lightbox="roadtrip" data-title="How to Unblock US Websites using DNS Proxy">
+<img class="card-img v-image" src="https://tse2.mm.bing.net/th?id=OIP.MQ86ckCPCyp7k44j8GRIsAHaFq&pid=Api&P=0&w=300&h=300" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How to Unblock US Websites using DNS Proxy">
+
+</a>
+<div class="card-body text-center">  	
+<div class="d-block mb-2">
+<a href="https://www.smartdnsproxy.com/UserDocs/ck_1-geoblocking.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How to Unblock US Websites using DNS Proxy</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://cdn.comparitech.com/wp-content/uploads/2019/08/How-to-beat-geo-blocking-with-a-VPN-and-spoof-your-location.jpg" data-lightbox="roadtrip" data-title="How to Spoof Your Location and Avoid Geo-blocking with a VPN">
+<img class="card-img v-image" src="https://tse1.mm.bing.net/th?id=OIP.JjQ-s0EX_NNStPYxyOklVwHaDt&pid=Api&P=0&w=300&h=300" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How to Spoof Your Location and Avoid Geo-blocking with a VPN">
+
+</a>
+<div class="card-body text-center">  	
+<div class="d-block mb-2">
+<a href="https://cdn.comparitech.com/wp-content/uploads/2019/08/How-to-beat-geo-blocking-with-a-VPN-and-spoof-your-location.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How to Spoof Your Location and Avoid Geo-blocking with a VPN</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://scanwp.net/blog/wp-content/uploads/2018/11/Screenshot_2018-11-18-Geo-Block.png" data-lightbox="roadtrip" data-title="12 Best WordPress Plugins for Blocking Countries Compared - 2020 - Scan WP">
+<img class="card-img v-image" src="https://scanwp.net/blog/wp-content/uploads/2018/11/Screenshot_2018-11-18-Geo-Block.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="12 Best WordPress Plugins for Blocking Countries Compared - 2020 - Scan WP">
+
+</a>
+<div class="card-body text-center">  	
+<div class="d-block mb-2">
+<a href="https://scanwp.net/blog/wp-content/uploads/2018/11/Screenshot_2018-11-18-Geo-Block.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">12 Best WordPress Plugins for Blocking Countries Compared - 2020 - Scan WP</h3>
+</div>
+</div>
+</div>
+ 
+<div class="d-block p-3"> 
+<p>
+Head to Country IP Blocks homepage. Select the countries you want to block or allow. For the Select Format section, choose Apache.htaccess Deny or Apache.htaccess Allow. The choice depends on whether you want to block or allow visitors from those countries.. Geoblocking is a method used to ban IP addresses originating in particular countries from visiting your website. An IP address is a code that identifies a device used to access the Internet. For example, if a person uses a laptop to access your website, that laptop will bear an IP address.. 3 types of blocking by country. CleanTalk provides 3 different types of blocking users by country: Anti Spam; SpamFireWall; Security FireWall(Only WordPress) Anti Spam. Blocking by country using Anti Spam service allows you to block only comments registrations and any POST requests on the site from users from certain countries.. The safest and easiest way to go about it is to use geo blocking for blocking all IP addresses from a particular country or geographical area from accessing your WordPress site. For instance, if you have geo blocked “Australia,” every Internet use.... I use the MaxMind API and only block access to specific areas such as login, purchase, etc. It works great. I setup a failsafe country ISO code of XX. Because from time to time it fails to respond   in which case I assume the visitor is from a "friendly" country and I log the blocked visit as from "XX".. </p>
+</div> 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.fmemodules.com/1373-thickbox_default/geo-ip-ban.jpg" data-lightbox="roadtrip" data-title="PrestaShop GEOIP Module, Block IP, Country or Redirect">
+<img class="card-img v-image" src="https://www.fmemodules.com/1373-thickbox_default/geo-ip-ban.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="PrestaShop GEOIP Module, Block IP, Country or Redirect">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.fmemodules.com/1373-thickbox_default/geo-ip-ban.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">PrestaShop GEOIP Module, Block IP, Country or Redirect</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.ipgeoblock.com/img/2015-09/ScanCountry.png" data-lightbox="roadtrip" data-title="I still have access from blacklisted country. | IP Geo Block">
+<img class="card-img v-image" src="https://www.ipgeoblock.com/img/2015-09/ScanCountry.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="I still have access from blacklisted country. | IP Geo Block">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.ipgeoblock.com/img/2015-09/ScanCountry.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">I still have access from blacklisted country. | IP Geo Block</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.webscale.com/wp-content/uploads/2019/10/app-zoom.jpg" data-lightbox="roadtrip" data-title="Web Controls - How to block countries from accessing my site | Webscale">
+<img class="card-img v-image" src="https://www.webscale.com/wp-content/uploads/2019/10/app-zoom.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Web Controls - How to block countries from accessing my site | Webscale">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.webscale.com/wp-content/uploads/2019/10/app-zoom.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Web Controls - How to block countries from accessing my site | Webscale</h3>
+</div>
+</div>
+</div>
+<div class="d-block p-3"> 
+<p>
+<strong>Blocking a country from accessing my site (geo restrict ...</strong> Please reply to help me on the blocking of a page to the specific country. I am also trying to block a  folder  from my website to specific country to not see. If i do a block the folder  to specific country (for example: going to block all countries except India) using my hosting provider or may use cloudfare, is the Google will still crawl .... <strong>How To Block A Country In WordPress? (Geoblocking Methods ...</strong> In Geoblocking, instead of blocking just one IP address, you can block every IP address in a specific country from accessing your WordPress site. This means if you have blocked “Canada”, no person from Canada using the Internet on any device – computers, mobiles, etc., – will be able to visit your website.. </p>
+</div>
+<div class="col-12 mb-4">
+<div class="card">
+<img class="card-img-top v-cover" src="https://surfshark.com/wp-content/uploads/2019/11/Surfshark-bypass-geo-restrictions.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Unblock websites and bypass geoblocks - Surfshark">
+<div class="card-body">
+<h3 class="h5"><b>Unblock websites and bypass geoblocks - Surfshark</b></h3>
+</div> 
+</div>
+</div>
+<div class="d-block p-3"> 
+<p>
+In Geoblocking, instead of blocking just one IP address, you can block every IP address in a specific country from accessing your WordPress site. This means if you have blocked “Canada”, no person from Canada using the Internet on any device – computers, mobiles, etc., – will be able to visit your website.. How to Block Entire Country Web Traffic. Having a large traffic is not the issue. However, the issue is that probably 99% of the traffic is bots, brute force attacks, and other vulnerabilities that can severely harm your website.. The only solution is blocking the website from the unintended audience.. Blocking traffic by country using Spam FireWall allows you to partially block access to the site for the IP addresses of specific countries. All visitors from the blocked country will be given a special page, while ordinary users will be able to go through it and be able to view the site, comment and register, but bots will not be able to go .... The safest and easiest way to go about it is to use geo blocking for blocking all IP addresses from a particular country or geographical area from accessing your WordPress site. For instance, if you have geo blocked “Australia,” every Internet use.... I use the MaxMind API and only block access to specific areas such as login, purchase, etc. It works great. I setup a failsafe country ISO code of XX. Because from time to time it fails to respond   in which case I assume the visitor is from a "friendly" country and I log the blocked visit as from "XX".. Country IP Blocks. Similar to IP2Location, Country IP Blocks also sells premium GeoIP databases and also offers free generation of an access control list to block or allow visitors from specific countries. To generate the block list, select the countries followed by selecting either .htaccess deny or .htaccess allow.. Below, there is a more complex example for situations where a country is not always blocked. Don't forget to restart Apache! Here's a tutorial on SetEnvIf if you'd like to tweak the code. And here's some reading on the Order allow,deny directive. Flavor 3: Blocking a Country on All Sites Except One. </p>
+
+<div><ul class="list-group">
+<div class="col-sm-12 p-2">
+<strong>READ MORE:</strong>
+<li class="list-group-item"><a class="badge-dark" href="view-i-cant-get-my-google-sheet-to-be-responsive-what-am-i-doing-wrong.html">I Cant Get My Google Sheet To Be Responsive What Am I Doing Wrong</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-changing-logocolor-for-specific-page--change-logocolor-when-tapping-mobile-menu-navigation.html">Changing Logocolor For Specific Page  Change Logocolor When Tapping Mobile Menu Navigation</a></li>
+<li class="list-group-item"><a class="badge-secondary" href="view-2-column-mobile-view.html">2 Column Mobile View</a></li>
+<li class="list-group-item"><a class="badge-warning" href="view-hover-state-on-mobile-menu.html">Hover State On Mobile Menu</a></li>
+</div>
+</ul></div>
+</div> 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://i.pinimg.com/originals/76/0c/fb/760cfb0be660f5caa118b93d64179c3e.png" data-lightbox="roadtrip" data-title="You can&#39;t watch geo-restricted YouTube Videos or even access Youtube due fact it is blocked in ...">
+<img class="card-img v-image" src="https://i.pinimg.com/originals/76/0c/fb/760cfb0be660f5caa118b93d64179c3e.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="You can&#39;t watch geo-restricted YouTube Videos or even access Youtube due fact it is blocked in ...">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://i.pinimg.com/originals/76/0c/fb/760cfb0be660f5caa118b93d64179c3e.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">You can&#39;t watch geo-restricted YouTube Videos or even access Youtube due fact it is blocked in ...</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="http://img.gtricks.com/2017/05/Screen-Shot-2017-05-29-at-10.39.34-PM-1.png" data-lightbox="roadtrip" data-title="Access Geo Restricted YouTube Videos Without a VPN">
+<img class="card-img v-image" src="http://img.gtricks.com/2017/05/Screen-Shot-2017-05-29-at-10.39.34-PM-1.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Access Geo Restricted YouTube Videos Without a VPN">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="http://img.gtricks.com/2017/05/Screen-Shot-2017-05-29-at-10.39.34-PM-1.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Access Geo Restricted YouTube Videos Without a VPN</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.fmemodules.com/1375-thickbox_default/geo-ip-ban.jpg" data-lightbox="roadtrip" data-title="PrestaShop GEOIP Module, Block IP, Country or Redirect">
+<img class="card-img v-image" src="https://www.fmemodules.com/1375-thickbox_default/geo-ip-ban.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="PrestaShop GEOIP Module, Block IP, Country or Redirect">
+
+</a>
+<div class="card-body text-center"> 
+<div class="d-block mb-2">
+<a href="https://www.fmemodules.com/1375-thickbox_default/geo-ip-ban.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div> 
+<h3 class="h6">PrestaShop GEOIP Module, Block IP, Country or Redirect</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/04/1428948344cpanel-ip-blocker.jpg" data-lightbox="roadtrip" data-title="How to Block Entire Countries from Accessing Your Website">
+<img class="card-img v-image" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/04/1428948344cpanel-ip-blocker.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How to Block Entire Countries from Accessing Your Website">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/04/1428948344cpanel-ip-blocker.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How to Block Entire Countries from Accessing Your Website</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://coincodex.com/en/resources/images/admin/news/binanceorg-website/binance-chain.jpg:resizeboxcropjpg?1200x650.jpg" data-lightbox="roadtrip" data-title="Binance.org Website Used to Access Binance DEX Will Geo-Block Users from 29 Countries, but There ...">
+<img class="card-img v-image" src="https://coincodex.com/en/resources/images/admin/news/binanceorg-website/binance-chain.jpg:resizeboxcropjpg?1200x650.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Binance.org Website Used to Access Binance DEX Will Geo-Block Users from 29 Countries, but There ...">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://coincodex.com/en/resources/images/admin/news/binanceorg-website/binance-chain.jpg:resizeboxcropjpg?1200x650.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Binance.org Website Used to Access Binance DEX Will Geo-Block Users from 29 Countries, but There ...</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://static.makeuseof.com/wp-content/uploads/2019/05/cyberghost-670x368.png" data-lightbox="roadtrip" data-title="How to Bypass Blocked Sites and Internet Restrictions">
+<img class="card-img v-image" src="https://static.makeuseof.com/wp-content/uploads/2019/05/cyberghost-670x368.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How to Bypass Blocked Sites and Internet Restrictions">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://static.makeuseof.com/wp-content/uploads/2019/05/cyberghost-670x368.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How to Bypass Blocked Sites and Internet Restrictions</h3>
+</div>
+</div>
+</div>
+<div class="d-block p-3"> 
+<p>
+<strong>How to Block Entire Countries from Accessing Your Site and ...</strong> How to Block Entire Country Web Traffic. Having a large traffic is not the issue. However, the issue is that probably 99% of the traffic is bots, brute force attacks, and other vulnerabilities that can severely harm your website.. The only solution is blocking the website from the unintended audience.. <strong>How To Block A Country In WordPress? (Geoblocking Methods ...</strong> In Geoblocking, instead of blocking just one IP address, you can block every IP address in a specific country from accessing your WordPress site. This means if you have blocked “Canada”, no person from Canada using the Internet on any device – computers, mobiles, etc., – will be able to visit your website.. </p>
+</div> 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://happilyblended.com/wp-content/uploads/2014/05/Wordfence-Security-and-HostGator-Block-IP-access-3-1024x619.jpg" data-lightbox="roadtrip" data-title="Blocking IP&#39;s From Trying to Log into Your WP Blog">
+<img class="card-img v-image" src="https://happilyblended.com/wp-content/uploads/2014/05/Wordfence-Security-and-HostGator-Block-IP-access-3-1024x619.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Blocking IP&#39;s From Trying to Log into Your WP Blog">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://happilyblended.com/wp-content/uploads/2014/05/Wordfence-Security-and-HostGator-Block-IP-access-3-1024x619.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Blocking IP&#39;s From Trying to Log into Your WP Blog</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://i.stack.imgur.com/rjrlb.png" data-lightbox="roadtrip" data-title="dns - How can I block a country from accessing my website on Amazon Route 53? - Stack Overflow">
+<img class="card-img v-image" src="https://i.stack.imgur.com/rjrlb.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="dns - How can I block a country from accessing my website on Amazon Route 53? - Stack Overflow">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://i.stack.imgur.com/rjrlb.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">dns - How can I block a country from accessing my website on Amazon Route 53? - Stack Overflow</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://image1-srjcooldude.netdna-ssl.com/wp-content/uploads/2018/04/watch-region-restricted-content-websites.png" data-lightbox="roadtrip" data-title="How To Access Region Restricted Websites Easily With Single Trick">
+<img class="card-img v-image" src="https://image1-srjcooldude.netdna-ssl.com/wp-content/uploads/2018/04/watch-region-restricted-content-websites.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How To Access Region Restricted Websites Easily With Single Trick">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://image1-srjcooldude.netdna-ssl.com/wp-content/uploads/2018/04/watch-region-restricted-content-websites.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How To Access Region Restricted Websites Easily With Single Trick</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.xms-systems.co.uk/uploads/media/Members/1/Articles/security/country_list.png" data-lightbox="roadtrip" data-title="How to block access to my website from selected countries.">
+<img class="card-img v-image" src="https://www.xms-systems.co.uk/uploads/media/Members/1/Articles/security/country_list.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How to block access to my website from selected countries.">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.xms-systems.co.uk/uploads/media/Members/1/Articles/security/country_list.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How to block access to my website from selected countries.</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="http://cdn.ilovefreesoftware.com/wp-content/uploads/2019/04/Unblock-the-blocked-website.png" data-lightbox="roadtrip" data-title="Free Website Unblocker to Access Restricted Websites as Interactive PDF">
+<img class="card-img v-image" src="http://cdn.ilovefreesoftware.com/wp-content/uploads/2019/04/Unblock-the-blocked-website.png" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="Free Website Unblocker to Access Restricted Websites as Interactive PDF">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="http://cdn.ilovefreesoftware.com/wp-content/uploads/2019/04/Unblock-the-blocked-website.png" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">Free Website Unblocker to Access Restricted Websites as Interactive PDF</h3>
+</div>
+</div>
+</div>
+ 
+ 
+
+ 
+
+<div class="col-md-4 mb-4">
+<div class="card h-100">
+<a href="https://www.livethetech.com/wp-content/uploads/2019/01/unblocked-blocked-sites.jpg" data-lightbox="roadtrip" data-title="How to Access Blocked Websites: Unblock blocked sites | Live The Tech">
+<img class="card-img v-image" src="https://www.livethetech.com/wp-content/uploads/2019/01/unblocked-blocked-sites.jpg" onerror="this.onerror=null;this.src='https://i.pinimg.com/474x/32/3c/59/323c593af4d11350497e38e4899d6835.jpg';" alt="How to Access Blocked Websites: Unblock blocked sites | Live The Tech">
+
+</a>
+<div class="card-body text-center">  
+<div class="d-block mb-2">
+<a href="https://www.livethetech.com/wp-content/uploads/2019/01/unblocked-blocked-sites.jpg" target="_blank" rel="nofollow"><button class="btn btn-sm btn-outline-primary">Save Image<i class="fas fa-cloud-download-alt ml-1"></i></button></a>
+</div>
+<h3 class="h6">How to Access Blocked Websites: Unblock blocked sites | Live The Tech</h3>
+</div>
+</div>
+</div>
+</div>
+<p>
+If you think this blog article is useful, please support me by sharing this website article post to your social media accounts such as Facebook, Instagram and others or you can bookmark this website page with the title <strong><a href="/view-blocking-a-country-from-accessing-my-site-geo-restrict.html">Blocking A Country From Accessing My Site Geo Restrict</a></strong> use Ctrl + D for a laptop with a windows operating system or Command + D for a computer with a Mac OS operating system. If you are using a cellphone, you can also use the drawer menu from the browser you are using. Whether it's Windows, Mac, iOs or Android operating system, you will still be able to bookmark this blog page.
+</p>
+
+<div style="text-align: center;"><script>
+atOptions = {
+'key' : 'd21fb9b02817c0ac553e0041caac120a',
+'format' : 'iframe',
+'height' : 250,
+'width' : 300,
+'params' : {}
+};
+document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://inheritedgeneralrailroad.com/d21fb9b02817c0ac553e0041caac120a/invoke.js"></scr' + 'ipt>');
+</script></div>
+
+<div class="clearfix"></div> 
+<div class="d-block mt-4 p-3">
+Source: <a href="https://yahoo.com" rel="nofollow noopener">yahoo.com</a>
+</div>
+<div><ul class="list-group">
+<div class="col-sm-12 p-2">
+<strong>RELATED POSTS:</strong>
+<li class="list-group-item"><a class="badge-dark" href="view-positioning-of-mega-menu-css-problems.html">Positioning Of Mega Menu Css Problems</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-best-scheduling-tools.html">Best Scheduling Tools</a></li>
+<li class="list-group-item"><a class="badge-secondary" href="view-add-space-to-vertically-stacked-content-on-mobile.html">Add Space To Vertically Stacked Content On Mobile</a></li>
+<li class="list-group-item"><a class="badge-light" href="view-custom-form-validation-intercepting-the-form-submission.html">Custom Form Validation Intercepting The Form Submission</a></li>
+<li class="list-group-item"><a class="badge-warning" href="view-positioning-of-the-shopify-buy-button-on-product-page-7.0.html">Positioning Of The Shopify Buy Button On Product Page 7.0</a></li>
+<li class="list-group-item"><a class="badge-dark" href="view-changing-logo-color-on-different-site-pages.html">Changing Logo Color On Different Site Pages</a></li>
+<li class="list-group-item"><a class="badge-danger" href="view-different-footer-for-mobile.html">Different Footer For Mobile</a></li>
+</div>
+</ul></div>
+</div>
+</div> 
+<div class="col-md-3">
+<div class="col-sm-12 widget">
+<h3 class="widget-title">Recent Posts</h3>
+<ul class="list-group">
+<li class="list-group-item"><a href="https://moviz.my.id/" target="_blank">Stream Free Movies & TV Shows</a></li>
+<li class="list-group-item"><a href="view-complete-avis-2021-comment-ça-marche.html">Complete Avis 2021 Comment ça Marche</a></li>
+<li class="list-group-item"><a href="view-questce-que-lélargissement-du-pénis-de-collosel.html">Questce Que Lélargissement Du Pénis De Collosel</a></li>
+<li class="list-group-item"><a href="view-adding-iframes-to-my-site-because-the-javascript-code-is-messing-with-site-formatting.html">Adding Iframes To My Site Because The Javascript Code Is Messing With Site Formatting</a></li>
+<li class="list-group-item"><a href="view-create-3-column-image-grid-with-hover-before-and-after-effect.html">Create 3 Column Image Grid With Hover Before And After Effect</a></li>
+<li class="list-group-item"><a href="view-split-sticky-sections.html">Split Sticky Sections</a></li>
+<li class="list-group-item"><a href="view-moving/changing-close-button-in-lightbox-view-on-gallery-page.html">Moving/changing Close Button In Lightbox View On Gallery Page</a></li>
+<li class="list-group-item"><a href="view-i-cant-get-my-google-sheet-to-be-responsive-what-am-i-doing-wrong.html">I Cant Get My Google Sheet To Be Responsive What Am I Doing Wrong</a></li>
+<li class="list-group-item"><a href="view-disable-customer-order-shipping-emails.html">Disable Customer Order Shipping Emails</a></li>
+<li class="list-group-item"><a href="view-positioning-of-mega-menu-css-problems.html">Positioning Of Mega Menu Css Problems</a></li>
+<li class="list-group-item"><a href="view-remove-logo-from-header-injecting-code-didnt-work.html">Remove Logo From Header Injecting Code Didnt Work</a></li>
+<li class="list-group-item"><a href="view-anchor-link-coding-help.html">Anchor Link Coding Help</a></li>
+<li class="list-group-item"><a href="view-changing-logocolor-for-specific-page--change-logocolor-when-tapping-mobile-menu-navigation.html">Changing Logocolor For Specific Page  Change Logocolor When Tapping Mobile Menu Navigation</a></li>
+<li class="list-group-item"><a href="view-accordion-issues-read-more-button-issues.html">Accordion Issues Read More Button Issues</a></li>
+<li class="list-group-item"><a href="view-best-scheduling-tools.html">Best Scheduling Tools</a></li>
+<li class="list-group-item"><a href="view-change-background-image-size-on-mobile.html">Change Background Image Size On Mobile</a></li>
+<li class="list-group-item"><a href="view-do-not-have-header-appear-on-scroll-for-desktop-view-only-7.1.html">Do Not Have Header Appear On Scroll For Desktop View Only 7.1</a></li>
+<li class="list-group-item"><a href="view-2-column-mobile-view.html">2 Column Mobile View</a></li>
+<li class="list-group-item"><a href="view-how-can-i-prevent-my-graph-from-becoming-too-small-on-mobile.html">How Can I Prevent My Graph From Becoming Too Small On Mobile</a></li>
+<li class="list-group-item"><a href="view-add-space-to-vertically-stacked-content-on-mobile.html">Add Space To Vertically Stacked Content On Mobile</a></li>
+<li class="list-group-item"><a href="view-product-carousel-&-slideshow-ui-and-navigation-arrows-missing-on-mobile-in-7.1.html">Product Carousel & Slideshow Ui And Navigation Arrows Missing On Mobile In 7.1</a></li>
+<li class="list-group-item"><a href="view-change-related-product-alignement.html">Change Related Product Alignement</a></li>
+<li class="list-group-item"><a href="view-hover-state-on-mobile-menu.html">Hover State On Mobile Menu</a></li>
+<li class="list-group-item"><a href="view-codeblock-doesnt-show-on-mobile.html">Codeblock Doesnt Show On Mobile</a></li>
+<li class="list-group-item"><a href="view-custom-form-validation-intercepting-the-form-submission.html">Custom Form Validation Intercepting The Form Submission</a></li>
+<li class="list-group-item"><a href="view-redirecting-to-productspecific-pages-after-order-confirmation-page.html">Redirecting To Productspecific Pages After Order Confirmation Page</a></li>
+<li class="list-group-item"><a href="view-embed-document-repository.html">Embed Document Repository</a></li>
+<li class="list-group-item"><a href="view-changing-the-background-colour-of-one-page-on-my-website.html">Changing The Background Colour Of One Page On My Website</a></li>
+<li class="list-group-item"><a href="view-move-from-heroku-to-squarespace.html">Move From Heroku To Squarespace</a></li>
+<li class="list-group-item"><a href="view-positioning-of-the-shopify-buy-button-on-product-page-7.0.html">Positioning Of The Shopify Buy Button On Product Page 7.0</a></li>
+<li class="list-group-item"><a href="view-custom-cart-icon-brine-7.0.html">Custom Cart Icon Brine 7.0</a></li>
+<li class="list-group-item"><a href="view-adding-scroll-arrows-to-brine-product-page-photo-slideshow.html">Adding Scroll Arrows To Brine Product Page Photo Slideshow</a></li>
+<li class="list-group-item"><a href="view-logo-load-javascript-set-as-null-after-first-call-for-rest-of-session.html">Logo Load Javascript Set As Null After First Call For Rest Of Session</a></li>
+<li class="list-group-item"><a href="view-inverting-cursor-across-black/dark-backgrounds.html">Inverting Cursor Across Black/dark Backgrounds</a></li>
+<li class="list-group-item"><a href="view-changing-logo-color-on-different-site-pages.html">Changing Logo Color On Different Site Pages</a></li>
+<li class="list-group-item"><a href="view-make-blog-masonry-grid-unclickable.html">Make Blog Masonry Grid Unclickable</a></li>
+<li class="list-group-item"><a href="view-how-to-add-javascript-to-navigation-button-7.1.html">How To Add Javascript To Navigation Button 7.1</a></li>
+<li class="list-group-item"><a href="view-full-width-image-that-doesnt-impact-other-content-block.html">Full Width Image That Doesnt Impact Other Content Block</a></li>
+<li class="list-group-item"><a href="view-different-footer-for-mobile.html">Different Footer For Mobile</a></li>
+<li class="list-group-item"><a href="view-gradient-start-and-finish-over-text-instead-of-over-entire-block.html">Gradient Start And Finish Over Text Instead Of Over Entire Block</a></li>
+<li class="list-group-item"><a href="view-how-to-remove-all-category-from-shop-in-tresoire-and-edit-button-on-forms-to-full-width.html">How To Remove All Category From Shop In Tresoire And Edit Button On Forms To Full Width</a></li>
+<li class="list-group-item"><a href="view-hide-header-and-footer-on-confirmation-page.html">Hide Header And Footer On Confirmation Page</a></li>
+<li class="list-group-item"><a href="view-carousel-block.html">Carousel Block</a></li>
+<li class="list-group-item"><a href="view-removing-next/previous-post-in-7.0-blog.html">Removing Next/previous Post In 7.0 Blog</a></li>
+<li class="list-group-item"><a href="view-how-do-i-make-a-row-of-text-blocks-maintain-equal-height-and-responsive.html">How Do I Make A Row Of Text Blocks Maintain Equal Height And Responsive</a></li>
+<li class="list-group-item"><a href="view-instagram-blocks-not-showing-captions-descriptions.html">Instagram Blocks Not Showing Captions Descriptions</a></li>
+<li class="list-group-item"><a href="view-removing-a-drop-shadow-from-an-image.html">Removing A Drop Shadow From An Image</a></li>
+<li class="list-group-item"><a href="view-7.1-split-section-in-3.html">7.1 Split Section In 3</a></li>
+<li class="list-group-item"><a href="view-quote-block-css.html">Quote Block Css</a></li>
+<li class="list-group-item"><a href="view-how-do-i-enable-script.html">How Do I Enable Script</a></li>
+<li class="list-group-item"><a href="view-layout-4-columns-as-2-columns-on-mobile.html">Layout 4 Columns As 2 Columns On Mobile</a></li>
+</ul>
+</div>
+<div class="col-sm-12 widget">
+<!--ads/auto.txt-->
+
+<!-- ads -->
+</div>
+</div> 
+</div>
+<div class="row footer">
+<div class="col-md-12 text-center">
+<a href="dmca.html">Dmca</a>
+<a href="contact.html">Contact</a>
+<a href="disclaimer.html">Disclaimer</a>
+<a href="privacy.html">Privacy</a>
+<a href="sitemap.html">Sitemaps</a>
+<div style="text-align: center; font-size: 90%;">Copyright &copy; <script>document.write(new Date().getFullYear());</script> <strong><a href="/">CodingDong</a></strong>. All Rights Reserved.
+ <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+</div>
+</div>
+</div>
+<!--<style>
+#topbar{  background:#ddd;  width:100%;  text-align:center;  color:#333;  padding:5px;  overflow:hidden;  height:89px;  z-index:1000;  font-family:Georgia;  font-size:17px;  line-height:30px;  position:fixed;  bottom:0;  left:0;  border-top:3px solid #26ADE4;  box-shadow:0 1px 5px rgba(0,0,0,.7);
+}
+
+#topbar a{-webkit-box-shadow:rgba(0,0,0,0.278431) 1px 1px 3px; background:#26ADE4;  border-bottom-left-radius:4px;  border-bottom-right-radius:4px;  border-top-left-radius:4px;  border-top-right-radius:4px;  border:none;  box-shadow:rgba(0,0,0,0.278431) 1px 1px 3px;  color:white;  cursor:pointer;  font-size:0.95em;  margin:0px 0px 0px 7px;  outline:none;  padding:5px 13px 5px;  position:relative;  text-decoration:initial;
+font-size:19px;
+}
+
+#topbar a:hover{  cursor:pointer;background:#444}
+
+#topbar a:active{  top:1px}
+
+</style>
+
+<div id='topbar'>
+<p>Instant Chat - Adult Cam Chat - 100% Free! 
+  <br>
+<a href="https://ehhfjf.datedats.com/?utm_source=5f1b2eb75eeef" target="_blank">Join Now</a>
+</p>
+</div> -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$(document).on('click','#image-download',function(e)
+{
+e.preventDefault();
+var url = $(this).data('url');
+var title = $(this).data('title');
+var x=new XMLHttpRequest();
+x.open( "GET", url , true);
+x.responseType="blob";
+x.onload= function(e){download(e.target.response, title, "image/jpg");};
+x.send();
+});
+});
+</script-->
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script src='//inheritedgeneralrailroad.com/99/59/cb/9959cb27b9995ebeb975c47c825f8dfa.js'></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function()
+  {
+    $('body').addClass('xepo_ads');
+  });
+
+  $(document).on('click','.xepo_ads',function(e)
+  {
+      $(this).removeClass('xepo_ads');
+      window.open('https://inheritedgeneralrailroad.com/f2dbgriw?key=3599303f4ceed1f2635a1cca0f5e2cb4', '_blank');
+  });
+</script>
+
+<!-- Histats.com  START  (aync)-->
+<script>var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4403915,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4403915&101" alt=""></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>
