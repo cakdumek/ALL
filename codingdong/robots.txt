@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://codingdong.onrender.com/sitemap.xml
