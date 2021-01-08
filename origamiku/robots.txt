@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://origamiku.onrender.com/sitemap.xml

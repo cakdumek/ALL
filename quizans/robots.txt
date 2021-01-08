@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://quizans.onrender.com/sitemap.xml
