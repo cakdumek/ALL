@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://wallpaperdin.onrender.com/sitemap.xml
