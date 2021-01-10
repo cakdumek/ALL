@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://bisnisonline.onrender.com/sitemap.xml

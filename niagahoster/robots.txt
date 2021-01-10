@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://niagahoster.onrender.com/sitemap.xml
