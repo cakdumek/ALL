@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://cakvalentine.onrender.com/sitemap.xml

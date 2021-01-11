@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://nulledscript.onrender.com/sitemap.xml
